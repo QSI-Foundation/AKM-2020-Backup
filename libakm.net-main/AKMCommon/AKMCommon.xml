@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AKMCommon</name>
+    </assembly>
+    <members>
+        <member name="T:AKMCommon.Enum.AkmEvent">
+            <summary>
+            AKM events sent and received with each frame
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Enum.AkmStatus">
+            <summary>
+            AKM frame processing results
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Error.AkmError">
+            <summary>
+            AKM error class that allows storing AKM Status value
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Error.AkmError.status">
+            <summary>
+            AKM Status assigned with error
+            </summary>
+        </member>
+        <member name="M:AKMCommon.Error.AkmError.#ctor(AKMCommon.Enum.AkmStatus)">
+            <summary>
+            New AKM Error with given AKM Status value
+            </summary>
+            <param name="status">AKM Status enum value</param>
+        </member>
+        <member name="M:AKMCommon.Error.AkmError.#ctor(AKMCommon.Enum.AkmStatus,System.String)">
+            <summary>
+            New AKM Error with given AKM Status value and custom exception message
+            </summary>
+            <param name="status">>AKM Status enum value</param>
+            <param name="message">Custom exception message</param>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmAppConfig">
+            <summary>
+            AKM application configuration structure
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfigFrameSchema">
+            <summary>
+            AKM Frame schema definition regarding lengths and starting indexes of each required part
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfigKeyString">
+            <summary>
+            AKM initial key string
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmCommand">
+            <summary>
+            AKM Command structure storing information about required operation, parameters and pointer to data
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfigParams">
+            <summary>
+            AKM parameters required for C-library initialization
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfiguration">
+            <summary>
+            Structure storing AKM required configuration
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmDataReceivedEventArgs">
+            <summary>
+            Event arguments for data received event. 
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmDataReceivedEventArgs.FrameData">
+            <summary>
+            Byte array with transmission content
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmDataReceivedEventArgs.RelationshipId">
+            <summary>
+            Relationship Id value 
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmParameterDataVector">
+            <summary>
+            Strucutre storing AKM data vector
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmProcessCtx">
+            <summary>
+            AKM Structure storing current processing context
+            </summary>
+        </member>
+    </members>
+</doc>

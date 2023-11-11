@@ -1,0 +1,180 @@
+\hypertarget{class_a_k_m_logic_1_1_akm_key}{}\doxysection{A\+K\+M\+Logic.\+Akm\+Key Class Reference}
+\label{class_a_k_m_logic_1_1_akm_key}\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+
+
+Default I\+Key implementation  
+
+
+Inheritance diagram for A\+K\+M\+Logic.\+Akm\+Key\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_k_m_logic_1_1_akm_key}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_adeff02683a404d5ed9258399703c72f5}{Akm\+Key}} (int key\+Length)
+\begin{DoxyCompactList}\small\item\em Contructor allowing for custom key length \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a5d646b1227efad7c3874563275035820}{Akm\+Key}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a53d424f7a37e562261023d5129befb89}{Set\+Key}} (byte\mbox{[}$\,$\mbox{]} key\+Bytes)
+\begin{DoxyCompactList}\small\item\em Update current key value from byte array \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_afdbc9973a661d4e8849781ba55d43a11}{Set\+Key\+From\+String}} (string key\+String)
+\begin{DoxyCompactList}\small\item\em Update current key value from a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a25b6488cce1bd9b834c2980c39debae0}{Set\+Key\+From\+Base64\+String}} (string key\+String)
+\begin{DoxyCompactList}\small\item\em Update current key value from a Base64 encoded string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a212737448a0c3d78dd48bf2669b9eeba}{Key\+As\+String}} =$>$ Encoding.\+U\+T\+F8.\+Get\+String(\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a8b115ed87e89ee7715d746ac7ea670b1}{Key\+As\+Bytes}})
+\begin{DoxyCompactList}\small\item\em Current key as U\+T\+F8 encoded string \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a26b3c2176fb152a28ed760b53a8fa200}{Key\+As\+Base64\+String}} =$>$ Convert.\+To\+Base64\+String(\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a8b115ed87e89ee7715d746ac7ea670b1}{Key\+As\+Bytes}})
+\begin{DoxyCompactList}\small\item\em Current key as Base64 string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_abc69023f463dc1eaa2901acded826901}{Key\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets key length value \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a8b115ed87e89ee7715d746ac7ea670b1}{Key\+As\+Bytes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current key as byte array \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Default I\+Key implementation 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_adeff02683a404d5ed9258399703c72f5}\label{class_a_k_m_logic_1_1_akm_key_adeff02683a404d5ed9258399703c72f5}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!AkmKey@{AkmKey}}
+\index{AkmKey@{AkmKey}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{AkmKey()}{AkmKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Key.\+Akm\+Key (\begin{DoxyParamCaption}\item[{int}]{key\+Length }\end{DoxyParamCaption})}
+
+
+
+Contructor allowing for custom key length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Length} & Encryption Key Length in bytes (not bits!)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_a5d646b1227efad7c3874563275035820}\label{class_a_k_m_logic_1_1_akm_key_a5d646b1227efad7c3874563275035820}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!AkmKey@{AkmKey}}
+\index{AkmKey@{AkmKey}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{AkmKey()}{AkmKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Key.\+Akm\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_a53d424f7a37e562261023d5129befb89}\label{class_a_k_m_logic_1_1_akm_key_a53d424f7a37e562261023d5129befb89}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!SetKey@{SetKey}}
+\index{SetKey@{SetKey}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{SetKey()}{SetKey()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Akm\+Key.\+Set\+Key (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{key\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Update current key value from byte array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Bytes} & byte array with new key value\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key_a03522aff8d530c6120fb39a766cae5e3}{A\+K\+M\+Interface.\+I\+Key}}.
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_a25b6488cce1bd9b834c2980c39debae0}\label{class_a_k_m_logic_1_1_akm_key_a25b6488cce1bd9b834c2980c39debae0}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!SetKeyFromBase64String@{SetKeyFromBase64String}}
+\index{SetKeyFromBase64String@{SetKeyFromBase64String}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{SetKeyFromBase64String()}{SetKeyFromBase64String()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Akm\+Key.\+Set\+Key\+From\+Base64\+String (\begin{DoxyParamCaption}\item[{string}]{key\+String }\end{DoxyParamCaption})}
+
+
+
+Update current key value from a Base64 encoded string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+String} & Base64 encoded string with new key value\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key_acf994fe6038efbf5ff3b4ed0c46af022}{A\+K\+M\+Interface.\+I\+Key}}.
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_afdbc9973a661d4e8849781ba55d43a11}\label{class_a_k_m_logic_1_1_akm_key_afdbc9973a661d4e8849781ba55d43a11}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!SetKeyFromString@{SetKeyFromString}}
+\index{SetKeyFromString@{SetKeyFromString}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{SetKeyFromString()}{SetKeyFromString()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Akm\+Key.\+Set\+Key\+From\+String (\begin{DoxyParamCaption}\item[{string}]{key\+String }\end{DoxyParamCaption})}
+
+
+
+Update current key value from a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+String} & string with new key value\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_a26b3c2176fb152a28ed760b53a8fa200}\label{class_a_k_m_logic_1_1_akm_key_a26b3c2176fb152a28ed760b53a8fa200}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!KeyAsBase64String@{KeyAsBase64String}}
+\index{KeyAsBase64String@{KeyAsBase64String}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{KeyAsBase64String}{KeyAsBase64String}}
+{\footnotesize\ttfamily string A\+K\+M\+Logic.\+Akm\+Key.\+Key\+As\+Base64\+String =$>$ Convert.\+To\+Base64\+String(\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a8b115ed87e89ee7715d746ac7ea670b1}{Key\+As\+Bytes}})}
+
+
+
+Current key as Base64 string 
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_a212737448a0c3d78dd48bf2669b9eeba}\label{class_a_k_m_logic_1_1_akm_key_a212737448a0c3d78dd48bf2669b9eeba}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!KeyAsString@{KeyAsString}}
+\index{KeyAsString@{KeyAsString}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{KeyAsString}{KeyAsString}}
+{\footnotesize\ttfamily string A\+K\+M\+Logic.\+Akm\+Key.\+Key\+As\+String =$>$ Encoding.\+U\+T\+F8.\+Get\+String(\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_a8b115ed87e89ee7715d746ac7ea670b1}{Key\+As\+Bytes}})}
+
+
+
+Current key as U\+T\+F8 encoded string 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_a8b115ed87e89ee7715d746ac7ea670b1}\label{class_a_k_m_logic_1_1_akm_key_a8b115ed87e89ee7715d746ac7ea670b1}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!KeyAsBytes@{KeyAsBytes}}
+\index{KeyAsBytes@{KeyAsBytes}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{KeyAsBytes}{KeyAsBytes}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Logic.\+Akm\+Key.\+Key\+As\+Bytes\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Current key as byte array 
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_key_abc69023f463dc1eaa2901acded826901}\label{class_a_k_m_logic_1_1_akm_key_abc69023f463dc1eaa2901acded826901}} 
+\index{AKMLogic.AkmKey@{AKMLogic.AkmKey}!KeyLength@{KeyLength}}
+\index{KeyLength@{KeyLength}!AKMLogic.AkmKey@{AKMLogic.AkmKey}}
+\doxysubsubsection{\texorpdfstring{KeyLength}{KeyLength}}
+{\footnotesize\ttfamily int A\+K\+M\+Logic.\+Akm\+Key.\+Key\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets key length value 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Akm\+Key.\+cs\end{DoxyCompactItemize}

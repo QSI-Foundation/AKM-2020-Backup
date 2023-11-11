@@ -1,0 +1,379 @@
+\hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame}{}\doxysection{A\+K\+M\+Interface.\+I\+Decrypted\+Frame Interface Reference}
+\label{interface_a_k_m_interface_1_1_i_decrypted_frame}\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+
+
+Functional requirements for A\+KM decrypted frame object  
+
+
+Inheritance diagram for A\+K\+M\+Interface.\+I\+Decrypted\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_a_k_m_interface_1_1_i_decrypted_frame}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_aca160c6a5dda0ddeb69a40a95d5f08ca}{Encrypt}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} key)
+\begin{DoxyCompactList}\small\item\em Encrypts current frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_ae80e3cbe76fdbf073e73fae72cec553b}{Set\+Source\+Address}} (short source\+Address)
+\begin{DoxyCompactList}\small\item\em Sets frame\textquotesingle{}s sender address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a28b6699e5bf6e87e98a1924004081e5c}{Set\+Source\+Address}} (byte\mbox{[}$\,$\mbox{]} source\+Address)
+\begin{DoxyCompactList}\small\item\em Sets frame\textquotesingle{}s sender address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_af69a65e5223f79d77aaf95aaa7ed7694}{Set\+Target\+Address}} (short target\+Address)
+\begin{DoxyCompactList}\small\item\em Sets frame\textquotesingle{}s target address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a669fcda450563bea5d54d27f22967aaa}{Set\+Target\+Address}} (byte\mbox{[}$\,$\mbox{]} target\+Address)
+\begin{DoxyCompactList}\small\item\em Sets frame\textquotesingle{}s target address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a9c94fc2a9b9ad6303e62f22635ca7401}{Set\+Frame\+Event}} (\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}} akm\+Event)
+\begin{DoxyCompactList}\small\item\em Sets flag for given A\+KM event \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a492fa8cb2dd08aeae6877c278b91f283}{Set\+Content}} (byte\mbox{[}$\,$\mbox{]} content)
+\begin{DoxyCompactList}\small\item\em Sets the transmission data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_abfa4de11be4151da65de8535198bd6e0}{Set\+Content\+Hash}} ()
+\begin{DoxyCompactList}\small\item\em Update frame with hash value of transmitted content \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_ae944dc358099e06d3d2b8e7998c781a1}{Set\+Data}} (byte\mbox{[}$\,$\mbox{]} frame\+Data)
+\begin{DoxyCompactList}\small\item\em Sets whole frame content that will be encrypted for transmission \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a93e1ce8c2d3358a499a67c44d8ff367a}{Get\+Source\+Address\+As\+Byte\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets frame\textquotesingle{}s source address in a form of byte array \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a9ecf75807f293a51514b9877bd41455f}{Get\+Source\+Address\+As\+Short}} ()
+\begin{DoxyCompactList}\small\item\em Gets frame\textquotesingle{}s source address as a numeric short value \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a789f8fd24eefedfaccab8547a70cf5a8}{Get\+Target\+Address\+As\+Byte\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets frame\textquotesingle{}s targer address in a form of byte array \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a43fc90173bbf0cda6d26247f785481be}{Get\+Target\+Address\+As\+Short}} ()
+\begin{DoxyCompactList}\small\item\em Gets frame\textquotesingle{}s source target as a numeric short value \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a163b4905fd6b0227d21d4ac4b4a1bc57}{Get\+Content\+Bytes}} ()
+\begin{DoxyCompactList}\small\item\em Extracts data package from A\+KM frame \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a3604c4b8844ee2b916f373fe611bf588}{Get\+Content\+Hash\+As\+String}} ()
+\begin{DoxyCompactList}\small\item\em Gets hash value for frame content in a form of a string \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_a673a561b027f26204de2ea81a0cc9089}{Get\+Content\+Hash\+As\+Byte\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets hash value for frame content in a form of a byte array \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_adda3951fd80924a7d673f0309c737c26}{Relationship\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Relationshyip Id value for current Relationship group \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame_ab55f5e375c29aac927e32b7560b11032}{Frame\+Event}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A\+KM event set for this frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functional requirements for A\+KM decrypted frame object 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_aca160c6a5dda0ddeb69a40a95d5f08ca}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_aca160c6a5dda0ddeb69a40a95d5f08ca}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!Encrypt@{Encrypt}}
+\index{Encrypt@{Encrypt}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{Encrypt()}{Encrypt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}} A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Encrypt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Encrypts current frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} with encryption key value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+Encrypted frame created from decrypted frame data and provided encrypteion key value
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a36f2b31d58f5e37c32d85c4130a5d512}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a163b4905fd6b0227d21d4ac4b4a1bc57}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a163b4905fd6b0227d21d4ac4b4a1bc57}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!GetContentBytes@{GetContentBytes}}
+\index{GetContentBytes@{GetContentBytes}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetContentBytes()}{GetContentBytes()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Get\+Content\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Extracts data package from A\+KM frame 
+
+\begin{DoxyReturn}{Returns}
+byte array with data transmitted in A\+KM frame
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_adc32f3651b9b6ae04ed429c877ae33b0}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a673a561b027f26204de2ea81a0cc9089}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a673a561b027f26204de2ea81a0cc9089}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!GetContentHashAsByteArray@{GetContentHashAsByteArray}}
+\index{GetContentHashAsByteArray@{GetContentHashAsByteArray}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetContentHashAsByteArray()}{GetContentHashAsByteArray()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Get\+Content\+Hash\+As\+Byte\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets hash value for frame content in a form of a byte array 
+
+\begin{DoxyReturn}{Returns}
+byte array with hash calculated for frame\textquotesingle{}s content
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_ae680e5e5a4af9d959f547c95d4c2a9d3}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a3604c4b8844ee2b916f373fe611bf588}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a3604c4b8844ee2b916f373fe611bf588}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!GetContentHashAsString@{GetContentHashAsString}}
+\index{GetContentHashAsString@{GetContentHashAsString}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetContentHashAsString()}{GetContentHashAsString()}}
+{\footnotesize\ttfamily string A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Get\+Content\+Hash\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets hash value for frame content in a form of a string 
+
+\begin{DoxyReturn}{Returns}
+string value with hash calculated for frame\textquotesingle{}s content
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a4fd3cea8546d0eaf9ac1aa4e8a667d63}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a93e1ce8c2d3358a499a67c44d8ff367a}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a93e1ce8c2d3358a499a67c44d8ff367a}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!GetSourceAddressAsByteArray@{GetSourceAddressAsByteArray}}
+\index{GetSourceAddressAsByteArray@{GetSourceAddressAsByteArray}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetSourceAddressAsByteArray()}{GetSourceAddressAsByteArray()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Get\+Source\+Address\+As\+Byte\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets frame\textquotesingle{}s source address in a form of byte array 
+
+\begin{DoxyReturn}{Returns}
+byte array with frame\textquotesingle{}s source address
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_aa9e1f937651c9a7739ac3238c7696c3e}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a9ecf75807f293a51514b9877bd41455f}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a9ecf75807f293a51514b9877bd41455f}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!GetSourceAddressAsShort@{GetSourceAddressAsShort}}
+\index{GetSourceAddressAsShort@{GetSourceAddressAsShort}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetSourceAddressAsShort()}{GetSourceAddressAsShort()}}
+{\footnotesize\ttfamily short A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Get\+Source\+Address\+As\+Short (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets frame\textquotesingle{}s source address as a numeric short value 
+
+\begin{DoxyReturn}{Returns}
+short value with frame\textquotesingle{}s source address
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_aae9fea7652e4182998be8770164ecb99}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a789f8fd24eefedfaccab8547a70cf5a8}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a789f8fd24eefedfaccab8547a70cf5a8}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!GetTargetAddressAsByteArray@{GetTargetAddressAsByteArray}}
+\index{GetTargetAddressAsByteArray@{GetTargetAddressAsByteArray}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetTargetAddressAsByteArray()}{GetTargetAddressAsByteArray()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Get\+Target\+Address\+As\+Byte\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets frame\textquotesingle{}s targer address in a form of byte array 
+
+\begin{DoxyReturn}{Returns}
+byte array with frame\textquotesingle{}s target address
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_acf7c8ee7c47dbad1e83be08851854523}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a43fc90173bbf0cda6d26247f785481be}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a43fc90173bbf0cda6d26247f785481be}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!GetTargetAddressAsShort@{GetTargetAddressAsShort}}
+\index{GetTargetAddressAsShort@{GetTargetAddressAsShort}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetTargetAddressAsShort()}{GetTargetAddressAsShort()}}
+{\footnotesize\ttfamily short A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Get\+Target\+Address\+As\+Short (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets frame\textquotesingle{}s source target as a numeric short value 
+
+\begin{DoxyReturn}{Returns}
+short value with frame\textquotesingle{}s target address
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a005ca9e0100f49fefb25a9c75c688484}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a492fa8cb2dd08aeae6877c278b91f283}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a492fa8cb2dd08aeae6877c278b91f283}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetContent@{SetContent}}
+\index{SetContent@{SetContent}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetContent()}{SetContent()}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Content (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{content }\end{DoxyParamCaption})}
+
+
+
+Sets the transmission data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & byte array holding infomration that will be sent inside A\+KM frame\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a6b1efaccd052d3a0fa19b9a71161de1e}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_abfa4de11be4151da65de8535198bd6e0}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_abfa4de11be4151da65de8535198bd6e0}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetContentHash@{SetContentHash}}
+\index{SetContentHash@{SetContentHash}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetContentHash()}{SetContentHash()}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Content\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update frame with hash value of transmitted content 
+
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_acaf1e07de562e52bb8e1e3cd64d62aa7}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_ae944dc358099e06d3d2b8e7998c781a1}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_ae944dc358099e06d3d2b8e7998c781a1}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetData@{SetData}}
+\index{SetData@{SetData}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Data (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{frame\+Data }\end{DoxyParamCaption})}
+
+
+
+Sets whole frame content that will be encrypted for transmission 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Data} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a58b52f36c5d7e0dc7123f3570f3408d3}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a9c94fc2a9b9ad6303e62f22635ca7401}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a9c94fc2a9b9ad6303e62f22635ca7401}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetFrameEvent@{SetFrameEvent}}
+\index{SetFrameEvent@{SetFrameEvent}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetFrameEvent()}{SetFrameEvent()}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Frame\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}}}]{akm\+Event }\end{DoxyParamCaption})}
+
+
+
+Sets flag for given A\+KM event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em akm\+Event} & A\+KM event that will be sent with this frame\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a8e0e8aaa684b0e46c8921cf0fbe92e4c}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a28b6699e5bf6e87e98a1924004081e5c}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a28b6699e5bf6e87e98a1924004081e5c}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetSourceAddress@{SetSourceAddress}}
+\index{SetSourceAddress@{SetSourceAddress}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetSourceAddress()}{SetSourceAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Source\+Address (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{source\+Address }\end{DoxyParamCaption})}
+
+
+
+Sets frame\textquotesingle{}s sender address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Address} & sender\textquotesingle{}s address as byte array\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a6075157699195a638329b67081eb2813}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_ae80e3cbe76fdbf073e73fae72cec553b}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_ae80e3cbe76fdbf073e73fae72cec553b}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetSourceAddress@{SetSourceAddress}}
+\index{SetSourceAddress@{SetSourceAddress}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetSourceAddress()}{SetSourceAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Source\+Address (\begin{DoxyParamCaption}\item[{short}]{source\+Address }\end{DoxyParamCaption})}
+
+
+
+Sets frame\textquotesingle{}s sender address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Address} & sender\textquotesingle{}s address as numeric short value\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_abddf0b75739da4d767ab1b3d8fed4df2}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_a669fcda450563bea5d54d27f22967aaa}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_a669fcda450563bea5d54d27f22967aaa}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetTargetAddress@{SetTargetAddress}}
+\index{SetTargetAddress@{SetTargetAddress}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetTargetAddress()}{SetTargetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Target\+Address (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{target\+Address }\end{DoxyParamCaption})}
+
+
+
+Sets frame\textquotesingle{}s target address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Address} & target address as byte array\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a70d7374b60f05fc3af3b8173af65f390}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_af69a65e5223f79d77aaf95aaa7ed7694}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_af69a65e5223f79d77aaf95aaa7ed7694}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!SetTargetAddress@{SetTargetAddress}}
+\index{SetTargetAddress@{SetTargetAddress}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetTargetAddress()}{SetTargetAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Set\+Target\+Address (\begin{DoxyParamCaption}\item[{short}]{target\+Address }\end{DoxyParamCaption})}
+
+
+
+Sets frame\textquotesingle{}s target address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Address} & target address as numeric short value\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_decrypted_frame_a84df46de2ab0d1ec8463915bbd6d64fe}{A\+K\+M\+Logic.\+Akm\+Decrypted\+Frame}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_ab55f5e375c29aac927e32b7560b11032}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_ab55f5e375c29aac927e32b7560b11032}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!FrameEvent@{FrameEvent}}
+\index{FrameEvent@{FrameEvent}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{FrameEvent}{FrameEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}} A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Frame\+Event\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A\+KM event set for this frame 
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_decrypted_frame_adda3951fd80924a7d673f0309c737c26}\label{interface_a_k_m_interface_1_1_i_decrypted_frame_adda3951fd80924a7d673f0309c737c26}} 
+\index{AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}!RelationshipId@{RelationshipId}}
+\index{RelationshipId@{RelationshipId}!AKMInterface.IDecryptedFrame@{AKMInterface.IDecryptedFrame}}
+\doxysubsubsection{\texorpdfstring{RelationshipId}{RelationshipId}}
+{\footnotesize\ttfamily short A\+K\+M\+Interface.\+I\+Decrypted\+Frame.\+Relationship\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Relationshyip Id value for current Relationship group 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Interface/I\+Decrypted\+Frame.\+cs\end{DoxyCompactItemize}

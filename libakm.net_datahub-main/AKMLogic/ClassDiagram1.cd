@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AKMLogic.Receiver">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAKABIAAAAAgAABAAAABI=</HashCode>
+      <FileName>Receiver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_akmRelationship" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AKMLogic.Sender">
+    <Position X="1.25" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAABQAAAKEAACAABAgAABABQABI=</HashCode>
+      <FileName>Sender.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_akmRelationship" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AKMLogic.AkmSetup">
+    <Position X="7.25" Y="1.5" Width="2" />
+    <Members>
+      <Field Name="_envVariableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAEAgAAAAAAAAgAAIEQAAAEAAAAQMQpAAAAACAAAgCA=</HashCode>
+      <FileName>AkmSetup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_akmCLibCaller" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="AkmRelationships" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AKMLogic.AkmRelationship">
+    <Position X="4.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAAYIAACACIoAAEAAAAAAACAAEBgQAAAABBGQABIBII=</HashCode>
+      <FileName>AkmRelationship.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AKMLogic.AkmEncryptedFrame">
+    <Position X="11.25" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="_frameBytes" Hidden="true" />
+      <Field Name="_logger" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEQAICAAAAAIAAAAAAAAAAAhAgIAAA=</HashCode>
+      <FileName>AkmEncryptedFrame.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_crypto" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AKMLogic.AkmDecryptedFrame">
+    <Position X="11.25" Y="3.5" Width="1.75" />
+    <Members>
+      <Field Name="_frameBytes" Hidden="true" />
+      <Field Name="_hashAdded" Hidden="true" />
+      <Field Name="_logger" Hidden="true" />
+      <Field Name="_relationshipId" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>hQgEEQIBAIKAAAEAACAgAAAAYAAAAAAAAAAEBABZAAA=</HashCode>
+      <FileName>AkmDecryptedFrame.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_crypto" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AKMLogic.AkmCrypto">
+    <Position X="13.5" Y="5.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAABACACAAAYAAAAAAAAAAAEAAAAAAAAAKAAAAA=</HashCode>
+      <FileName>AkmCrypto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AKMLogic.AkmCLibCall" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AkmCLibCall.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="AKMInterface.ICryptography">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

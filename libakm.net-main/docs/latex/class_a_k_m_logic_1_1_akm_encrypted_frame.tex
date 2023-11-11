@@ -1,0 +1,110 @@
+\hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame}{}\doxysection{A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame Class Reference}
+\label{class_a_k_m_logic_1_1_akm_encrypted_frame}\index{AKMLogic.AkmEncryptedFrame@{AKMLogic.AkmEncryptedFrame}}
+
+
+Default A\+KM Endcrypted frame implementation  
+
+
+Inheritance diagram for A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_k_m_logic_1_1_akm_encrypted_frame}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a3d37908f221b1d9ba52565cb2451d05c}{Akm\+Encrypted\+Frame}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography}{I\+Cryptography}} cryptography\+Provider, I\+Logger logger, short relationship\+Id)
+\begin{DoxyCompactList}\small\item\em Constructor accepting I\+Cryptography implementation, I\+Logger implementation and relationship Id value \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_abe0f2534a59564930d77e5aa6ba16f03}{Akm\+Encrypted\+Frame}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography}{I\+Cryptography}} cryptography\+Provider, I\+Logger logger, byte\mbox{[}$\,$\mbox{]} encrypted\+Data, short relationship\+Id)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_aaeb0343830d9338ba3c47aa42d664c94}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_aaeb0343830d9338ba3c47aa42d664c94}} 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_aaeb0343830d9338ba3c47aa42d664c94}{Get\+Encrypted\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Returns byte array storing encrypted part of A\+KM frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_aed4fdba8f5ea437d35cb8ea73fdc73fe}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_aed4fdba8f5ea437d35cb8ea73fdc73fe}} 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_aed4fdba8f5ea437d35cb8ea73fdc73fe}{Get\+Transmission\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Decrypts A\+KM frame and reutns full \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_a2e6aed21ee78f4b73bc31e6cea653551}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_a2e6aed21ee78f4b73bc31e6cea653551}} 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a2e6aed21ee78f4b73bc31e6cea653551}{Decrypt}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} key)
+\begin{DoxyCompactList}\small\item\em Method responsible for decrypting A\+KM frame content based on provided key \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_a7a59bc1f8fb989c72f2cedb860654feb}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_a7a59bc1f8fb989c72f2cedb860654feb}} 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a7a59bc1f8fb989c72f2cedb860654feb}{Set\+Encrypted\+Data}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Sets encrypted part of A\+KM frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a7054b87980d586cbc154683d4e6bbf99}{Set\+Frame\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Sets A\+KM frame length in the header \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_a945aba34ee459d94d58fcc0febe1283d}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_a945aba34ee459d94d58fcc0febe1283d}} 
+short \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a945aba34ee459d94d58fcc0febe1283d}{Relationship\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Default A\+KM Endcrypted frame implementation 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_a3d37908f221b1d9ba52565cb2451d05c}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_a3d37908f221b1d9ba52565cb2451d05c}} 
+\index{AKMLogic.AkmEncryptedFrame@{AKMLogic.AkmEncryptedFrame}!AkmEncryptedFrame@{AkmEncryptedFrame}}
+\index{AkmEncryptedFrame@{AkmEncryptedFrame}!AKMLogic.AkmEncryptedFrame@{AKMLogic.AkmEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{AkmEncryptedFrame()}{AkmEncryptedFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame.\+Akm\+Encrypted\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography}{I\+Cryptography}}}]{cryptography\+Provider,  }\item[{I\+Logger}]{logger,  }\item[{short}]{relationship\+Id }\end{DoxyParamCaption})}
+
+
+
+Constructor accepting I\+Cryptography implementation, I\+Logger implementation and relationship Id value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cryptography\+Provider} & Object implementing I\+Cryptography interface\\
+\hline
+{\em logger} & Object implementing I\+Logger interface\\
+\hline
+{\em relationship\+Id} & Relationship Id numeric value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_abe0f2534a59564930d77e5aa6ba16f03}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_abe0f2534a59564930d77e5aa6ba16f03}} 
+\index{AKMLogic.AkmEncryptedFrame@{AKMLogic.AkmEncryptedFrame}!AkmEncryptedFrame@{AkmEncryptedFrame}}
+\index{AkmEncryptedFrame@{AkmEncryptedFrame}!AKMLogic.AkmEncryptedFrame@{AKMLogic.AkmEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{AkmEncryptedFrame()}{AkmEncryptedFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame.\+Akm\+Encrypted\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography}{I\+Cryptography}}}]{cryptography\+Provider,  }\item[{I\+Logger}]{logger,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{encrypted\+Data,  }\item[{short}]{relationship\+Id }\end{DoxyParamCaption})}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cryptography\+Provider} & Object implementing I\+Cryptography interface\\
+\hline
+{\em logger} & Object implementing I\+Logger interface\\
+\hline
+{\em encrypted\+Data} & byte array holding encrypted part of A\+KM frame\\
+\hline
+{\em relationship\+Id} & Relationship Id numeric value\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_encrypted_frame_a7054b87980d586cbc154683d4e6bbf99}\label{class_a_k_m_logic_1_1_akm_encrypted_frame_a7054b87980d586cbc154683d4e6bbf99}} 
+\index{AKMLogic.AkmEncryptedFrame@{AKMLogic.AkmEncryptedFrame}!SetFrameLength@{SetFrameLength}}
+\index{SetFrameLength@{SetFrameLength}!AKMLogic.AkmEncryptedFrame@{AKMLogic.AkmEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetFrameLength()}{SetFrameLength()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame.\+Set\+Frame\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets A\+KM frame length in the header 
+
+
+
+Implements \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame_aef125abf25e825753e281618a5a95bce}{A\+K\+M\+Interface.\+I\+Encrypted\+Frame}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Akm\+Encrypted\+Frame.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AKMCommon</name>
+    </assembly>
+    <members>
+        <member name="T:AKMCommon.Enum.AkmCmdOpCode">
+            <summary>
+            AKM Operation codes for setting state machine and triggering AKM workflow events
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.Return">
+            <summary>
+            Return current state
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.SetSendEvent">
+            <summary>
+            Set AKM state to sending data
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.SetKey">
+            <summary>
+            Set AKM state to setting new key
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.ResetKey">
+            <summary>
+            Set AKM state to reset key
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.MoveKey">
+            <summary>
+            Set AKM state to change active key index
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.UseKeys">
+            <summary>
+            Set AKM state to use new keys
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.RetryDec">
+            <summary>
+            Set AKM state to retry decryption
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.SetTimer">
+            <summary>
+            Set AKM state to set new timer value
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmCmdOpCode.ResetTimer">
+            <summary>
+            Set AKM state to reset timer
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Enum.AkmEvent">
+            <summary>
+            AKM events sent and received with each frame
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.None">
+            <summary>
+            No action required
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.RecvSE">
+            <summary>
+            Session established
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.RecvSEI">
+            <summary>
+            Initialize Session
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.RecvSEC">
+            <summary>
+            Session confirmed
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.RecvSEF">
+            <summary>
+            session finished
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.CannotDecrypt">
+            <summary>
+            Cannot decrypt
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.TimeOut">
+            <summary>
+            Operation timeout
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmEvent.LocalSEI">
+            <summary>
+            Event for forcing session initialization and key change
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Enum.AkmStatus">
+            <summary>
+            AKM Frame processing results returned from C library
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmStatus.Success">
+            <summary>
+            Successful frame processing
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmStatus.NoMemory">
+            <summary>
+            Insufficient memory to complete operation
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmStatus.UnknownSource">
+            <summary>
+            Source frame address not registered in current Relationship group
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Enum.AkmStatus.FatalError">
+            <summary>
+            Other error breaking regular workflow
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Error.AkmError">
+            <summary>
+            AKM error class that allows storing AKM Status value
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Error.AkmError.status">
+            <summary>
+            AKM Status assigned with error
+            </summary>
+        </member>
+        <member name="M:AKMCommon.Error.AkmError.#ctor(AKMCommon.Enum.AkmStatus)">
+            <summary>
+            New AKM Error with given AKM Status value
+            </summary>
+            <param name="status">AKM Status enum value</param>
+        </member>
+        <member name="M:AKMCommon.Error.AkmError.#ctor(AKMCommon.Enum.AkmStatus,System.String)">
+            <summary>
+            New AKM Error with given AKM Status value and custom exception message
+            </summary>
+            <param name="status">>AKM Status enum value</param>
+            <param name="message">Custom exception message</param>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmAppConfig">
+            <summary>
+            AKM application configuration structure
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.CommunicationPort">
+            <summary>
+            Communication port for service listening
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.IPAddress">
+            <summary>
+            IP address used for server endpoint
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.RelationshipId">
+            <summary>
+            Relatinship group identifier
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.SelfAddressValue">
+            <summary>
+            Nodes own numeric address value
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.DefaultKeySize">
+            <summary>
+            Default size of cryptographic key length in bytes
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.FrameSchema">
+            <summary>
+            AKM Frame schema definition
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.AkmConfigParameters">
+            <summary>
+            AKM specific configuration settings
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.InitialKeys">
+            <summary>
+            Optional initial cryptographic keys
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.NodesAddresses">
+            <summary>
+            Array for numeric addresses of all nodes in this Relationship group
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmAppConfig.PDV">
+            <summary>
+            PDV array used in new key generation
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfigFrameSchema">
+            <summary>
+            AKM Frame schema definition regarding lengths and starting indexes of each required part
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.RelationshipId_Index">
+            <summary>
+            starting index of relationship Id value in whole frame byte array
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.RelationshipId_Length">
+            <summary>
+            length of Relationship Id section in frame byte arra
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.SourceAddress_Index">
+            <summary>
+            starting index of source address value in whole frame byte array
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.SourceAddress_Length">
+            <summary>
+            length of Source Address section in frame byte arra
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.TargetAddress_Index">
+            <summary>
+            starting index of target address value in whole frame byte array
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.TargetAddress_Length">
+            <summary>
+            length of Target address section in frame byte arra
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.AkmEvent_Index">
+            <summary>
+            starting index of AKM Event value in whole frame byte array
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.AkmEvent_Length">
+            <summary>
+            length of AKM Event section in frame byte arra
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigFrameSchema.AkmDataStart_Index">
+            <summary>
+            starting index of data packeg value in whole frame byte array
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfigKeyString">
+            <summary>
+            AKM initial key string
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigKeyString.InitialKey">
+            <summary>
+            Initial key value defined in application config file
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmCommand">
+            <summary>
+            AKM Command structure storing information about required operation, parameters and pointer to data
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmCommand.opcode">
+            <summary>
+            Action that needs to be done
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmCommand.p1">
+            <summary>
+            indexes used in key updates
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmCommand.p2">
+            <summary>
+            indexes used in key updates
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmCommand.data">
+            <summary>
+            pointer to unmanaged memory for data update
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfigParams">
+            <summary>
+            AKM parameters required for C-library initialization
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.SK">
+            <summary>
+            Size of Key
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.SRNA">
+            <summary>
+            Size of Ring Node Addresses
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.N">
+            <summary>
+            Number of Nodes within AKM Relationship/Echo Ring
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.CSS">
+            <summary>
+            Current Session Seed
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.NSS">
+            <summary>
+            Next Session Seed
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.FSS">
+            <summary>
+            Fallback Session Seed
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.NFSS">
+            <summary>
+            Next Fallback Session Seed
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.SFSS">
+            <summary>
+            Shadow Fallback Session Seed
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.NSFSS">
+            <summary>
+            Next Shadow Fallback Session Seed
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.EFSS">
+            <summary>
+            Emergency Failsafe Session Seed
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.NNRT">
+            <summary>
+            Node Nonresponse Timeout
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.NSET">
+            <summary>
+            Normal Session Establishment Timeout
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.FBSET">
+            <summary>
+            Fallback Resynchronization Session Establishment Timeout
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmConfigParams.FSSET">
+            <summary>
+            Failsafe Resynchronization Session Establishment Timeout
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmConfiguration">
+            <summary>
+            Structure storing AKM required configuration
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmConfiguration.cfgParams">
+            <summary>
+            AKM configuration parameters structure
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmConfiguration.pdv">
+            <summary>
+            Pointer to PDV array
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmConfiguration.nodeAddresses">
+            <summary>
+            Pointer to node addresses array
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmConfiguration.selfNodeAddress">
+            <summary>
+            Pointer to self address value
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmDataReceivedEventArgs">
+            <summary>
+            Event arguments for data received event. 
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmDataReceivedEventArgs.FrameData">
+            <summary>
+            Byte array with transmission content
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmDataReceivedEventArgs.RelationshipId">
+            <summary>
+            Relationship Id value 
+            </summary>
+        </member>
+        <member name="P:AKMCommon.Struct.AkmDataReceivedEventArgs.SrcAddr">
+            <summary>
+            Relationship Node Number
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmParameterDataVector">
+            <summary>
+            Strucutre storing AKM data vector
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmParameterDataVector.data">
+            <summary>
+            Byte array storing information about AKM PDV
+            </summary>
+        </member>
+        <member name="T:AKMCommon.Struct.AkmProcessCtx">
+            <summary>
+            AKM Structure storing current processing context
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmProcessCtx.relationship">
+            <summary>
+            Pointer to relationship data memory area
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmProcessCtx.akmEvent">
+            <summary>
+            Current AKM event
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmProcessCtx.srcAddr">
+            <summary>
+            Pointer to source address memory area
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmProcessCtx.time_ms">
+            <summary>
+            Time counter
+            </summary>
+        </member>
+        <member name="F:AKMCommon.Struct.AkmProcessCtx.cmd">
+            <summary>
+            AKM command that will be executed
+            </summary>
+        </member>
+    </members>
+</doc>

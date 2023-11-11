@@ -1,0 +1,107 @@
+\hypertarget{class_a_k_m_logic_1_1_akm_crypto}{}\doxysection{A\+K\+M\+Logic.\+Akm\+Crypto Class Reference}
+\label{class_a_k_m_logic_1_1_akm_crypto}\index{AKMLogic.AkmCrypto@{AKMLogic.AkmCrypto}}
+
+
+Default cryptographic service provider for encryption, decryption and hash value checks  
+
+
+Inheritance diagram for A\+K\+M\+Logic.\+Akm\+Crypto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_k_m_logic_1_1_akm_crypto}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a575c804e6798746391daf5d6db941c7d}{Akm\+Crypto}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_acf8d69864010e8dd8fff14cc9232f8d5}{Akm\+Crypto}} (int key\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor allowing custom keysize value \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a6d4ab3cff23b347352d466e15e8be19b}{Akm\+Crypto}} (int key\+Size, int block\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor allowing for custom key and block size \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a472a45611fdbc5ab814a8800fc885c23}\label{class_a_k_m_logic_1_1_akm_crypto_a472a45611fdbc5ab814a8800fc885c23}} 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a472a45611fdbc5ab814a8800fc885c23}{Encrypt}} (byte\mbox{[}$\,$\mbox{]} data\+To\+Encrypt, byte\mbox{[}$\,$\mbox{]} key)
+\begin{DoxyCompactList}\small\item\em Encrypt given data using provided key \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a0793eee856b2accb18d292d00d328a12}\label{class_a_k_m_logic_1_1_akm_crypto_a0793eee856b2accb18d292d00d328a12}} 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a0793eee856b2accb18d292d00d328a12}{Decrypt}} (byte\mbox{[}$\,$\mbox{]} data\+To\+Decrypt, byte\mbox{[}$\,$\mbox{]} key)
+\begin{DoxyCompactList}\small\item\em Decrypt given data using provided key \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a89963237c3d87e867ad2af95dd6d3cdc}\label{class_a_k_m_logic_1_1_akm_crypto_a89963237c3d87e867ad2af95dd6d3cdc}} 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a89963237c3d87e867ad2af95dd6d3cdc}{Calculate\+Hash}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Calculate hash for given data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a8bb53ac6277f70341a1a8a19539f6264}\label{class_a_k_m_logic_1_1_akm_crypto_a8bb53ac6277f70341a1a8a19539f6264}} 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a8bb53ac6277f70341a1a8a19539f6264}{Dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a41329bcc3bcf945721c7557dc7ed619a}\label{class_a_k_m_logic_1_1_akm_crypto_a41329bcc3bcf945721c7557dc7ed619a}} 
+virtual void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a41329bcc3bcf945721c7557dc7ed619a}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_af9a2be47de3e8318c21e7fcb45fc1f3b}\label{class_a_k_m_logic_1_1_akm_crypto_af9a2be47de3e8318c21e7fcb45fc1f3b}} 
+int \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_af9a2be47de3e8318c21e7fcb45fc1f3b}{Key\+Size}} = 256\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_adf8cafbc29dfea177a0a9b88b27441c6}\label{class_a_k_m_logic_1_1_akm_crypto_adf8cafbc29dfea177a0a9b88b27441c6}} 
+int \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_adf8cafbc29dfea177a0a9b88b27441c6}{Block\+Size}} = 128\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a8e6cac5e3eb09c08a18a34fef0cac1cc}\label{class_a_k_m_logic_1_1_akm_crypto_a8e6cac5e3eb09c08a18a34fef0cac1cc}} 
+int \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_crypto_a8e6cac5e3eb09c08a18a34fef0cac1cc}{Hash\+Length}} = 32\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Default cryptographic service provider for encryption, decryption and hash value checks 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a575c804e6798746391daf5d6db941c7d}\label{class_a_k_m_logic_1_1_akm_crypto_a575c804e6798746391daf5d6db941c7d}} 
+\index{AKMLogic.AkmCrypto@{AKMLogic.AkmCrypto}!AkmCrypto@{AkmCrypto}}
+\index{AkmCrypto@{AkmCrypto}!AKMLogic.AkmCrypto@{AKMLogic.AkmCrypto}}
+\doxysubsubsection{\texorpdfstring{AkmCrypto()}{AkmCrypto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Crypto.\+Akm\+Crypto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor 
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_acf8d69864010e8dd8fff14cc9232f8d5}\label{class_a_k_m_logic_1_1_akm_crypto_acf8d69864010e8dd8fff14cc9232f8d5}} 
+\index{AKMLogic.AkmCrypto@{AKMLogic.AkmCrypto}!AkmCrypto@{AkmCrypto}}
+\index{AkmCrypto@{AkmCrypto}!AKMLogic.AkmCrypto@{AKMLogic.AkmCrypto}}
+\doxysubsubsection{\texorpdfstring{AkmCrypto()}{AkmCrypto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Crypto.\+Akm\+Crypto (\begin{DoxyParamCaption}\item[{int}]{key\+Size }\end{DoxyParamCaption})}
+
+
+
+Constructor allowing custom keysize value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Size} & encryption key length in bits\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_crypto_a6d4ab3cff23b347352d466e15e8be19b}\label{class_a_k_m_logic_1_1_akm_crypto_a6d4ab3cff23b347352d466e15e8be19b}} 
+\index{AKMLogic.AkmCrypto@{AKMLogic.AkmCrypto}!AkmCrypto@{AkmCrypto}}
+\index{AkmCrypto@{AkmCrypto}!AKMLogic.AkmCrypto@{AKMLogic.AkmCrypto}}
+\doxysubsubsection{\texorpdfstring{AkmCrypto()}{AkmCrypto()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Crypto.\+Akm\+Crypto (\begin{DoxyParamCaption}\item[{int}]{key\+Size,  }\item[{int}]{block\+Size }\end{DoxyParamCaption})}
+
+
+
+Constructor allowing for custom key and block size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Size} & encryption key length in bits\\
+\hline
+{\em block\+Size} & encryption block size in bits\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Akm\+Crypto.\+cs\end{DoxyCompactItemize}

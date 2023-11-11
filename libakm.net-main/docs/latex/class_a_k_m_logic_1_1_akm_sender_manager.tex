@@ -1,0 +1,103 @@
+\hypertarget{class_a_k_m_logic_1_1_akm_sender_manager}{}\doxysection{A\+K\+M\+Logic.\+Akm\+Sender\+Manager Class Reference}
+\label{class_a_k_m_logic_1_1_akm_sender_manager}\index{AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}}
+
+
+Provides client with \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} objects based on provided Relationship\+ID value  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_sender_manager_ad1836a7eecb708c1af4cd227843fb42a}{Get\+Default\+Sender}} (Cancellation\+Token token)
+\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object with configuration based on first entry in configuration file \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_sender_manager_a53aa42025f5ca23b1b0da5251dd01cb5}{Get\+Sender}} (short relatioship\+Id, short target\+Address)
+\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object with configuration created based on Relationship\+Id value \end{DoxyCompactList}\item 
+static I\+Dictionary$<$ short, \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} $>$ \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_sender_manager_a22977f68443d7b1d0b8ccbf200aed9cd}{Get\+Relationship\+Senders}} (short relationship\+Id)
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object collection for given Relationship \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_sender_manager_ae24ba7363df60200a6f982eb30fb48cc}{Add\+Sender}} (short relatioship\+Id, short sender\+Address, Socket socket, I\+Logger logger)
+\begin{DoxyCompactList}\small\item\em Add new sender object to specific Relationship \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides client with \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} objects based on provided Relationship\+ID value 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_sender_manager_ae24ba7363df60200a6f982eb30fb48cc}\label{class_a_k_m_logic_1_1_akm_sender_manager_ae24ba7363df60200a6f982eb30fb48cc}} 
+\index{AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}!AddSender@{AddSender}}
+\index{AddSender@{AddSender}!AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}}
+\doxysubsubsection{\texorpdfstring{AddSender()}{AddSender()}}
+{\footnotesize\ttfamily static void A\+K\+M\+Logic.\+Akm\+Sender\+Manager.\+Add\+Sender (\begin{DoxyParamCaption}\item[{short}]{relatioship\+Id,  }\item[{short}]{sender\+Address,  }\item[{Socket}]{socket,  }\item[{I\+Logger}]{logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add new sender object to specific Relationship 
+
+
+\begin{DoxyParams}{Parameters}
+{\em relatioship\+Id} & Relationship identifier\\
+\hline
+{\em sender\+Address} & Numeric value for target node\\
+\hline
+{\em socket} & Socket object for connected node\\
+\hline
+{\em logger} & I\+Logger implementation\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_sender_manager_ad1836a7eecb708c1af4cd227843fb42a}\label{class_a_k_m_logic_1_1_akm_sender_manager_ad1836a7eecb708c1af4cd227843fb42a}} 
+\index{AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}!GetDefaultSender@{GetDefaultSender}}
+\index{GetDefaultSender@{GetDefaultSender}!AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}}
+\doxysubsubsection{\texorpdfstring{GetDefaultSender()}{GetDefaultSender()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} A\+K\+M\+Logic.\+Akm\+Sender\+Manager.\+Get\+Default\+Sender (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object with configuration based on first entry in configuration file 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_sender_manager_a22977f68443d7b1d0b8ccbf200aed9cd}\label{class_a_k_m_logic_1_1_akm_sender_manager_a22977f68443d7b1d0b8ccbf200aed9cd}} 
+\index{AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}!GetRelationshipSenders@{GetRelationshipSenders}}
+\index{GetRelationshipSenders@{GetRelationshipSenders}!AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}}
+\doxysubsubsection{\texorpdfstring{GetRelationshipSenders()}{GetRelationshipSenders()}}
+{\footnotesize\ttfamily static I\+Dictionary$<$short, \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}}$>$ A\+K\+M\+Logic.\+Akm\+Sender\+Manager.\+Get\+Relationship\+Senders (\begin{DoxyParamCaption}\item[{short}]{relationship\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object collection for given Relationship 
+
+
+\begin{DoxyParams}{Parameters}
+{\em relationship\+Id} & Relationship Identifier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+Dictionary collection or null if given Relationship Id is not registered
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_sender_manager_a53aa42025f5ca23b1b0da5251dd01cb5}\label{class_a_k_m_logic_1_1_akm_sender_manager_a53aa42025f5ca23b1b0da5251dd01cb5}} 
+\index{AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}!GetSender@{GetSender}}
+\index{GetSender@{GetSender}!AKMLogic.AkmSenderManager@{AKMLogic.AkmSenderManager}}
+\doxysubsubsection{\texorpdfstring{GetSender()}{GetSender()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} A\+K\+M\+Logic.\+Akm\+Sender\+Manager.\+Get\+Sender (\begin{DoxyParamCaption}\item[{short}]{relatioship\+Id,  }\item[{short}]{target\+Address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns \mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object with configuration created based on Relationship\+Id value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em relatioship\+Id} & Identifies A\+KM Relationship\\
+\hline
+{\em target\+Address} & Identifies target to select proper sender for this A\+KM relationship \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_a_k_m_logic_1_1_sender}{Sender}} object
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Akm\+Sender\+Manager.\+cs\end{DoxyCompactItemize}

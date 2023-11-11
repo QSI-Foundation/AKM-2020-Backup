@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AKMInterface</name>
+    </assembly>
+    <members>
+        <member name="T:AKMInterface.ICLibCalls">
+            <summary>
+            Default implementation interface for C AKM library calls
+            </summary>
+        </member>
+        <member name="M:AKMInterface.ICLibCalls.AKMInit(AKMCommon.Struct.AkmProcessCtx@,AKMCommon.Struct.AkmConfiguration@)">
+            <summary>
+            Intializes AKM state machine based on provided parameters
+            </summary>
+            <param name="ctx">AKM processing context reference</param>
+            <param name="config">AKM configuration structure reference</param>
+            <returns></returns>
+        </member>
+        <member name="M:AKMInterface.ICLibCalls.AKMProcess(AKMCommon.Struct.AkmProcessCtx@)">
+            <summary>
+            Processes AKM frame
+            </summary>
+            <param name="ctx">reference to AKM processing context</param>
+        </member>
+        <member name="M:AKMInterface.ICLibCalls.AKMFree(System.IntPtr)">
+            <summary>
+            Frees up resources allocated for given relationship by unmanaged code
+            </summary>
+            <param name="relationship">pointer to AKM relationship</param>
+        </member>
+        <member name="M:AKMInterface.ICLibCalls.AKMGetConfig(System.IntPtr,AKMCommon.Struct.AkmConfiguration@)">
+            <summary>
+            Returns curently used AKM configuration
+            </summary>
+            <param name="relationship"></param>
+            <param name="config"></param>
+        </member>
+        <member name="T:AKMInterface.ICryptography">
+            <summary>
+            Minimum set of functionality required by a cryptographic service provider
+            </summary>
+        </member>
+        <member name="P:AKMInterface.ICryptography.HashLength">
+            <summary>
+            length of a hash value for used hash function
+            </summary>
+        </member>
+        <member name="M:AKMInterface.ICryptography.CalculateHash(System.Byte[])">
+            <summary>
+            Calculate hash for given data
+            </summary>
+            <param name="data">byte array with data</param>
+            <returns>byte array with hash value</returns>
+        </member>
+        <member name="M:AKMInterface.ICryptography.Decrypt(System.Byte[],System.Byte[])">
+            <summary>
+            Decrypt given data using provided key
+            </summary>
+            <param name="dataToDecrypt">byte array with encrypted data</param>
+            <param name="key">byte array with key value for decryption</param>
+            <returns>decrypted data as byte array</returns>
+        </member>
+        <member name="M:AKMInterface.ICryptography.Encrypt(System.Byte[],System.Byte[])">
+            <summary>
+            Encrypt given data using provided key
+            </summary>
+            <param name="dataToEncrypt">byte array with data for encryption</param>
+            <param name="key">byte array with key value for encryption</param>
+            <returns>encrypted data as byte array</returns>
+        </member>
+        <member name="T:AKMInterface.IDecryptedFrame">
+            <summary>
+            Functional requirements for AKM decrypted frame object
+            </summary>
+        </member>
+        <member name="P:AKMInterface.IDecryptedFrame.RelationshipId">
+            <summary>
+            Relationshyip Id value for current Relationship group
+            </summary>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.Encrypt(AKMInterface.IKey)">
+            <summary>
+            Encrypts current frame
+            </summary>
+            <param name="key">IKey with encryption key value</param>
+            <returns>IEncrypted frame created from decrypted frame data and provided encrypteion key value</returns>
+        </member>
+        <member name="P:AKMInterface.IDecryptedFrame.FrameEvent">
+            <summary>
+            AKM event set for this frame
+            </summary>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetSourceAddress(System.Int16)">
+            <summary>
+            Sets frame's sender address
+            </summary>
+            <param name="sourceAddress">sender's address as numeric short value</param>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetSourceAddress(System.Byte[])">
+            <summary>
+            Sets frame's sender address
+            </summary>
+            <param name="sourceAddress">sender's address as byte array</param>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetTargetAddress(System.Int16)">
+            <summary>
+            Sets frame's target address
+            </summary>
+            <param name="targetAddress">target address as numeric short value</param>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetTargetAddress(System.Byte[])">
+            <summary>
+            Sets frame's target address
+            </summary>
+            <param name="targetAddress">target address as byte array</param>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetFrameEvent(AKMCommon.Enum.AkmEvent)">
+            <summary>
+            Sets flag for given AKM event 
+            </summary>
+            <param name="akmEvent">AKM event that will be sent with this frame</param>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetContent(System.Byte[])">
+            <summary>
+            Sets the transmission data
+            </summary>
+            <param name="content">byte array holding infomration that will be sent inside AKM frame</param>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetContentHash">
+            <summary>
+            Update frame with hash value of transmitted content
+            </summary>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.SetData(System.Byte[])">
+            <summary>
+            Sets whole frame content that will be encrypted for transmission
+            </summary>
+            <param name="frameData"></param>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.GetSourceAddressAsByteArray">
+            <summary>
+            Gets frame's source address in a form of byte array
+            </summary>
+            <returns>byte array with frame's source address</returns>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.GetSourceAddressAsShort">
+            <summary>
+            Gets frame's source address as a numeric short value
+            </summary>
+            <returns>short value with frame's source address</returns>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.GetTargetAddressAsByteArray">
+            <summary>
+            Gets frame's targer address in a form of byte array
+            </summary>
+            <returns>byte array with frame's target address</returns>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.GetTargetAddressAsShort">
+            <summary>
+            Gets frame's source target as a numeric short value
+            </summary>
+            <returns>short value with frame's target address</returns>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.GetContentBytes">
+            <summary>
+            Extracts data package from AKM frame
+            </summary>
+            <returns>byte array with data transmitted in AKM frame</returns>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.GetContentHashAsString">
+            <summary>
+            Gets hash value for frame content in a form of a string
+            </summary>
+            <returns>string value with hash calculated for frame's content</returns>
+        </member>
+        <member name="M:AKMInterface.IDecryptedFrame.GetContentHashAsByteArray">
+            <summary>
+            Gets hash value for frame content in a form of a byte array
+            </summary>
+            <returns>byte array with hash calculated for frame's content</returns>
+        </member>
+        <member name="T:AKMInterface.IEncryptedFrame">
+            <summary>
+            AKM encrypted frame interface
+            </summary>
+        </member>
+        <member name="P:AKMInterface.IEncryptedFrame.RelationshipId">
+            <summary>
+            Relationship identifier
+            </summary>
+        </member>
+        <member name="M:AKMInterface.IEncryptedFrame.GetEncryptedData">
+            <summary>
+            Returns byte array storing encrypted part of AKM frame
+            </summary>
+            <returns>byte aray with encrypted content</returns>
+        </member>
+        <member name="M:AKMInterface.IEncryptedFrame.SetEncryptedData(System.Byte[])">
+            <summary>
+            Sets encrypted part of AKM frame
+            </summary>
+            <param name="data">byte array with encrypted AKM frame part</param>
+        </member>
+        <member name="M:AKMInterface.IEncryptedFrame.Decrypt(AKMInterface.IKey)">
+            <summary>
+            Method responsible for decrypting AKM frame content based on provided key
+            </summary>
+            <param name="key">decryption key</param>
+            <returns>IDecrypted frame object</returns>
+        </member>
+        <member name="M:AKMInterface.IEncryptedFrame.GetTransmissionData">
+            <summary>
+            Decrypts AKM frame and reutns full IDecryptedFrame object
+            </summary>
+            <returns>IDecrypted frame implementation</returns>
+        </member>
+        <member name="M:AKMInterface.IEncryptedFrame.SetFrameHeader">
+            <summary>
+            Sets AKM Frame header
+            </summary>
+        </member>
+        <member name="T:AKMInterface.IKey">
+            <summary>
+            Cryptographic key used in AKM process
+            </summary>
+        </member>
+        <member name="P:AKMInterface.IKey.KeyLength">
+            <summary>
+            Key length in bytes
+            </summary>
+        </member>
+        <member name="P:AKMInterface.IKey.KeyAsBase64String">
+            <summary>
+            Key bytes encoded as Base64 String
+            </summary>
+        </member>
+        <member name="P:AKMInterface.IKey.KeyAsBytes">
+            <summary>
+            Key as a byte array
+            </summary>
+        </member>
+        <member name="M:AKMInterface.IKey.SetKey(System.Byte[])">
+            <summary>
+            Sets new key value 
+            </summary>
+            <param name="keyBytes">byte array with new key</param>
+        </member>
+        <member name="M:AKMInterface.IKey.SetKeyFromBase64String(System.String)">
+            <summary>
+            Sets new key value
+            </summary>
+            <param name="keyString">string value with new key</param>
+        </member>
+        <member name="T:AKMInterface.IKeyFactory">
+            <summary>
+            Provides functionality to generate new IKey objects 
+            </summary>
+        </member>
+        <member name="M:AKMInterface.IKeyFactory.Create(System.IntPtr,System.Int32)">
+            <summary>
+            Creates new IKey object from given memory address
+            </summary>
+            <param name="pKeyBytes">Pointer to memory address with new key value</param>
+            <param name="keyLength">Length of memory area that should be used for creating new key</param>
+            <returns>IKey object</returns>
+        </member>
+        <member name="M:AKMInterface.IKeyFactory.Create(System.Byte[])">
+            <summary>
+            Creates new IKey object from byte array
+            </summary>
+            <param name="pKeyBytes">Byte array with new key data</param>
+            <returns>IKey object</returns>
+        </member>
+        <member name="M:AKMInterface.IKeyFactory.Create(System.String)">
+            <summary>
+            Creates new IKey object from a string 
+            </summary>
+            <param name="pKeyString">string with new key value</param>
+            <returns>IKey object</returns>
+        </member>
+    </members>
+</doc>

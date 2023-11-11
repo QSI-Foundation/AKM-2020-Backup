@@ -1,0 +1,150 @@
+\hypertarget{namespacemlibakm}{}\doxysection{mlibakm Namespace Reference}
+\label{namespacemlibakm}\index{mlibakm@{mlibakm}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmlibakm_1_1_akm_error}{Akm\+Error}}
+\item 
+struct \mbox{\hyperlink{structmlibakm_1_1_command}{Command}}
+\item 
+struct \mbox{\hyperlink{structmlibakm_1_1_config_params}{Config\+Params}}
+\item 
+struct \mbox{\hyperlink{structmlibakm_1_1_configuration}{Configuration}}
+\item 
+interface \mbox{\hyperlink{interfacemlibakm_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}}
+\item 
+interface \mbox{\hyperlink{interfacemlibakm_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}}
+\item 
+interface \mbox{\hyperlink{interfacemlibakm_1_1_i_key}{I\+Key}}
+\item 
+interface \mbox{\hyperlink{interfacemlibakm_1_1_i_key_factory}{I\+Key\+Factory}}
+\item 
+struct \mbox{\hyperlink{structmlibakm_1_1_process_ctx}{Process\+Ctx}}
+\item 
+class \mbox{\hyperlink{classmlibakm_1_1_relationship}{Relationship}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacemlibakm_a82f3a70c973e85f23227b3904da0d7c6}\label{namespacemlibakm_a82f3a70c973e85f23227b3904da0d7c6}} 
+enum {\bfseries Event} \{ \newline
+{\bfseries None} = -\/1, 
+{\bfseries Recv\+SE} = 0, 
+{\bfseries Recv\+S\+EI} = 1, 
+{\bfseries Recv\+S\+EC} = 2, 
+\newline
+{\bfseries Recv\+S\+EF} = 3, 
+{\bfseries Cannot\+Decrypt} = 4, 
+{\bfseries Time\+Out} = 5, 
+{\bfseries Local\+S\+EI} = 6, 
+\newline
+{\bfseries None} = -\/1, 
+{\bfseries Recv\+SE} = 0, 
+{\bfseries Recv\+S\+EI} = 1, 
+{\bfseries Recv\+S\+EC} = 2, 
+\newline
+{\bfseries Recv\+S\+EF} = 3, 
+{\bfseries Cannot\+Decrypt} = 4, 
+{\bfseries Time\+Out} = 5
+ \}
+\item 
+\mbox{\Hypertarget{namespacemlibakm_a3ba50ba34d2f12291df7a32e7e526886}\label{namespacemlibakm_a3ba50ba34d2f12291df7a32e7e526886}} 
+enum {\bfseries Status} \{ \newline
+{\bfseries Success} = 0, 
+{\bfseries No\+Memory} = 1, 
+{\bfseries Unknown\+Source} = 2, 
+{\bfseries Fatal\+Error} = 3, 
+\newline
+{\bfseries Success} = 0, 
+{\bfseries No\+Memory} = 1, 
+{\bfseries Unknown\+Source} = 2, 
+{\bfseries Fatal\+Error} = 3
+ \}
+\item 
+\mbox{\Hypertarget{namespacemlibakm_abba93579bfa14741fbf1b66c64b52926}\label{namespacemlibakm_abba93579bfa14741fbf1b66c64b52926}} 
+enum {\bfseries Cmd\+Opcode} \{ \newline
+{\bfseries Return} = 0, 
+{\bfseries Set\+Send\+Event} = 1, 
+{\bfseries Set\+Key} = 2, 
+{\bfseries Reset\+Key} = 3, 
+\newline
+{\bfseries Move\+Key} = 4, 
+{\bfseries Use\+Keys} = 5, 
+{\bfseries Retry\+Dec} = 6, 
+{\bfseries Set\+Timer} = 7, 
+\newline
+{\bfseries Reset\+Timer} = 8, 
+{\bfseries Return} = 0, 
+{\bfseries Set\+Send\+Event} = 1, 
+{\bfseries Set\+Key} = 2, 
+\newline
+{\bfseries Reset\+Key} = 3, 
+{\bfseries Move\+Key} = 4, 
+{\bfseries Use\+Keys} = 5, 
+{\bfseries Retry\+Dec} = 6, 
+\newline
+{\bfseries Set\+Timer} = 7, 
+{\bfseries Reset\+Timer} = 8
+ \}
+\item 
+\mbox{\Hypertarget{namespacemlibakm_a82f3a70c973e85f23227b3904da0d7c6}\label{namespacemlibakm_a82f3a70c973e85f23227b3904da0d7c6}} 
+enum {\bfseries Event} \{ \newline
+{\bfseries None} = -\/1, 
+{\bfseries Recv\+SE} = 0, 
+{\bfseries Recv\+S\+EI} = 1, 
+{\bfseries Recv\+S\+EC} = 2, 
+\newline
+{\bfseries Recv\+S\+EF} = 3, 
+{\bfseries Cannot\+Decrypt} = 4, 
+{\bfseries Time\+Out} = 5, 
+{\bfseries Local\+S\+EI} = 6, 
+\newline
+{\bfseries None} = -\/1, 
+{\bfseries Recv\+SE} = 0, 
+{\bfseries Recv\+S\+EI} = 1, 
+{\bfseries Recv\+S\+EC} = 2, 
+\newline
+{\bfseries Recv\+S\+EF} = 3, 
+{\bfseries Cannot\+Decrypt} = 4, 
+{\bfseries Time\+Out} = 5
+ \}
+\item 
+\mbox{\Hypertarget{namespacemlibakm_a3ba50ba34d2f12291df7a32e7e526886}\label{namespacemlibakm_a3ba50ba34d2f12291df7a32e7e526886}} 
+enum {\bfseries Status} \{ \newline
+{\bfseries Success} = 0, 
+{\bfseries No\+Memory} = 1, 
+{\bfseries Unknown\+Source} = 2, 
+{\bfseries Fatal\+Error} = 3, 
+\newline
+{\bfseries Success} = 0, 
+{\bfseries No\+Memory} = 1, 
+{\bfseries Unknown\+Source} = 2, 
+{\bfseries Fatal\+Error} = 3
+ \}
+\item 
+\mbox{\Hypertarget{namespacemlibakm_abba93579bfa14741fbf1b66c64b52926}\label{namespacemlibakm_abba93579bfa14741fbf1b66c64b52926}} 
+enum {\bfseries Cmd\+Opcode} \{ \newline
+{\bfseries Return} = 0, 
+{\bfseries Set\+Send\+Event} = 1, 
+{\bfseries Set\+Key} = 2, 
+{\bfseries Reset\+Key} = 3, 
+\newline
+{\bfseries Move\+Key} = 4, 
+{\bfseries Use\+Keys} = 5, 
+{\bfseries Retry\+Dec} = 6, 
+{\bfseries Set\+Timer} = 7, 
+\newline
+{\bfseries Reset\+Timer} = 8, 
+{\bfseries Return} = 0, 
+{\bfseries Set\+Send\+Event} = 1, 
+{\bfseries Set\+Key} = 2, 
+\newline
+{\bfseries Reset\+Key} = 3, 
+{\bfseries Move\+Key} = 4, 
+{\bfseries Use\+Keys} = 5, 
+{\bfseries Retry\+Dec} = 6, 
+\newline
+{\bfseries Set\+Timer} = 7, 
+{\bfseries Reset\+Timer} = 8
+ \}
+\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+.gitignore  eol=crlf
+libakm.*  eol=crlf
+mlibakm.*  eol=crlf
+testapp.*  eol=crlf
+testn.*  eol=crlf
+testn.cpp  eol=lf
+App.config  eol=crlf

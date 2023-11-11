@@ -1,0 +1,103 @@
+\hypertarget{interface_a_k_m_interface_1_1_i_key_factory}{}\doxysection{A\+K\+M\+Interface.\+I\+Key\+Factory Interface Reference}
+\label{interface_a_k_m_interface_1_1_i_key_factory}\index{AKMInterface.IKeyFactory@{AKMInterface.IKeyFactory}}
+
+
+Provides functionality to generate new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} objects  
+
+
+Inheritance diagram for A\+K\+M\+Interface.\+I\+Key\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_a_k_m_interface_1_1_i_key_factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key_factory_a9cef0d4b121fb36db899dcfb8b443a4d}{Create}} (Int\+Ptr p\+Key\+Bytes, int key\+Length)
+\begin{DoxyCompactList}\small\item\em Creates new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object from given memory address \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key_factory_af681e042b15a41dbe802d3b0e5c1c24e}{Create}} (byte\mbox{[}$\,$\mbox{]} p\+Key\+Bytes)
+\begin{DoxyCompactList}\small\item\em Creates new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object from byte array \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key_factory_a9d76fa04978e8f77cb846fc140b80033}{Create}} (string p\+Key\+String)
+\begin{DoxyCompactList}\small\item\em Creates new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object from a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functionality to generate new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} objects 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_key_factory_af681e042b15a41dbe802d3b0e5c1c24e}\label{interface_a_k_m_interface_1_1_i_key_factory_af681e042b15a41dbe802d3b0e5c1c24e}} 
+\index{AKMInterface.IKeyFactory@{AKMInterface.IKeyFactory}!Create@{Create}}
+\index{Create@{Create}!AKMInterface.IKeyFactory@{AKMInterface.IKeyFactory}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} A\+K\+M\+Interface.\+I\+Key\+Factory.\+Create (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{p\+Key\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Creates new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object from byte array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Key\+Bytes} & Byte array with new key data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_factory_a6f5646b8d6eacf68ba5f1c1ea79f7876}{A\+K\+M\+Logic.\+Akm\+Key\+Factory}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_key_factory_a9cef0d4b121fb36db899dcfb8b443a4d}\label{interface_a_k_m_interface_1_1_i_key_factory_a9cef0d4b121fb36db899dcfb8b443a4d}} 
+\index{AKMInterface.IKeyFactory@{AKMInterface.IKeyFactory}!Create@{Create}}
+\index{Create@{Create}!AKMInterface.IKeyFactory@{AKMInterface.IKeyFactory}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} A\+K\+M\+Interface.\+I\+Key\+Factory.\+Create (\begin{DoxyParamCaption}\item[{Int\+Ptr}]{p\+Key\+Bytes,  }\item[{int}]{key\+Length }\end{DoxyParamCaption})}
+
+
+
+Creates new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object from given memory address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Key\+Bytes} & Pointer to memory address with new key value\\
+\hline
+{\em key\+Length} & Length of memory area that should be used for creating new key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_factory_a23a67120f8bb84e913f81eef121efe41}{A\+K\+M\+Logic.\+Akm\+Key\+Factory}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_key_factory_a9d76fa04978e8f77cb846fc140b80033}\label{interface_a_k_m_interface_1_1_i_key_factory_a9d76fa04978e8f77cb846fc140b80033}} 
+\index{AKMInterface.IKeyFactory@{AKMInterface.IKeyFactory}!Create@{Create}}
+\index{Create@{Create}!AKMInterface.IKeyFactory@{AKMInterface.IKeyFactory}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} A\+K\+M\+Interface.\+I\+Key\+Factory.\+Create (\begin{DoxyParamCaption}\item[{string}]{p\+Key\+String }\end{DoxyParamCaption})}
+
+
+
+Creates new \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object from a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Key\+String} & string with new key value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} object
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_key_factory_aa5c8bc774be99f37b5a7d915270b9ba3}{A\+K\+M\+Logic.\+Akm\+Key\+Factory}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Interface/I\+Key\+Factory.\+cs\end{DoxyCompactItemize}

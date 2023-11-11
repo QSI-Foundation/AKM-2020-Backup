@@ -1,0 +1,96 @@
+\hypertarget{class_a_k_m_logic_1_1_akm_dummy_crypto}{}\doxysection{A\+K\+M\+Logic.\+Akm\+Dummy\+Crypto Class Reference}
+\label{class_a_k_m_logic_1_1_akm_dummy_crypto}\index{AKMLogic.AkmDummyCrypto@{AKMLogic.AkmDummyCrypto}}
+Inheritance diagram for A\+K\+M\+Logic.\+Akm\+Dummy\+Crypto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_k_m_logic_1_1_akm_dummy_crypto}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_dummy_crypto_a5af111c00a4ab7928807b7fdaf671441}{Calculate\+Hash}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Calculate hash for given data \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_dummy_crypto_a1ebcf46822ada264a2ff75e42832b8aa}{Decrypt}} (byte\mbox{[}$\,$\mbox{]} data\+To\+Decrypt, byte\mbox{[}$\,$\mbox{]} key)
+\begin{DoxyCompactList}\small\item\em Decrypt given data using provided key \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_dummy_crypto_a93c6022a5dfbb24f007054ce19db36fd}{Encrypt}} (byte\mbox{[}$\,$\mbox{]} data\+To\+Encrypt, byte\mbox{[}$\,$\mbox{]} key)
+\begin{DoxyCompactList}\small\item\em Encrypt given data using provided key \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_dummy_crypto_a5af111c00a4ab7928807b7fdaf671441}\label{class_a_k_m_logic_1_1_akm_dummy_crypto_a5af111c00a4ab7928807b7fdaf671441}} 
+\index{AKMLogic.AkmDummyCrypto@{AKMLogic.AkmDummyCrypto}!CalculateHash@{CalculateHash}}
+\index{CalculateHash@{CalculateHash}!AKMLogic.AkmDummyCrypto@{AKMLogic.AkmDummyCrypto}}
+\doxysubsubsection{\texorpdfstring{CalculateHash()}{CalculateHash()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Logic.\+Akm\+Dummy\+Crypto.\+Calculate\+Hash (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})}
+
+
+
+Calculate hash for given data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & byte array with data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte array with hash value
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography_ad541a4fa6b783d443a517c8d26da5f2e}{A\+K\+M\+Interface.\+I\+Cryptography}}.
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_dummy_crypto_a1ebcf46822ada264a2ff75e42832b8aa}\label{class_a_k_m_logic_1_1_akm_dummy_crypto_a1ebcf46822ada264a2ff75e42832b8aa}} 
+\index{AKMLogic.AkmDummyCrypto@{AKMLogic.AkmDummyCrypto}!Decrypt@{Decrypt}}
+\index{Decrypt@{Decrypt}!AKMLogic.AkmDummyCrypto@{AKMLogic.AkmDummyCrypto}}
+\doxysubsubsection{\texorpdfstring{Decrypt()}{Decrypt()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Logic.\+Akm\+Dummy\+Crypto.\+Decrypt (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data\+To\+Decrypt,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{key }\end{DoxyParamCaption})}
+
+
+
+Decrypt given data using provided key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Decrypt} & byte array with encrypted data\\
+\hline
+{\em key} & byte array with key value for decryption\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+decrypted data as byte array
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography_afcfe3d504adaa9bc887bec15d9722e2d}{A\+K\+M\+Interface.\+I\+Cryptography}}.
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_dummy_crypto_a93c6022a5dfbb24f007054ce19db36fd}\label{class_a_k_m_logic_1_1_akm_dummy_crypto_a93c6022a5dfbb24f007054ce19db36fd}} 
+\index{AKMLogic.AkmDummyCrypto@{AKMLogic.AkmDummyCrypto}!Encrypt@{Encrypt}}
+\index{Encrypt@{Encrypt}!AKMLogic.AkmDummyCrypto@{AKMLogic.AkmDummyCrypto}}
+\doxysubsubsection{\texorpdfstring{Encrypt()}{Encrypt()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Logic.\+Akm\+Dummy\+Crypto.\+Encrypt (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data\+To\+Encrypt,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{key }\end{DoxyParamCaption})}
+
+
+
+Encrypt given data using provided key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Encrypt} & byte array with data for encryption\\
+\hline
+{\em key} & byte array with key value for encryption\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+encrypted data as byte array
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography_a1f842d23ac067f7acaa54584e1acdaf3}{A\+K\+M\+Interface.\+I\+Cryptography}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Akm\+Dummy\+Crypto.\+cs\end{DoxyCompactItemize}

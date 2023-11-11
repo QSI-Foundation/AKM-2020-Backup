@@ -1,0 +1,112 @@
+\hypertarget{class_a_k_m_logic_1_1_receiver}{}\doxysection{A\+K\+M\+Logic.\+Receiver Class Reference}
+\label{class_a_k_m_logic_1_1_receiver}\index{AKMLogic.Receiver@{AKMLogic.Receiver}}
+
+
+Provides functionality for receiving A\+KM Frames over network stream and extracts transmitted data  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_receiver_a1edd0bd45f0d108d232259c9854878c6}{Receiver}} (Socket socket, Cancellation\+Token token, I\+Logger logger)
+\begin{DoxyCompactList}\small\item\em Simplified contructor that uses default I\+Cryptography implementation provided by A\+K\+M\+Crypto class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_receiver_aa7395d36f11a5ab85b5fd9b2d18dd6b4}{Start\+Receiving}} ()
+\begin{DoxyCompactList}\small\item\em Start new thread responsible for checking network stream for new data and processing it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_receiver_a217a0545d484627824f089ce3cd5d304}{Start\+Receiving}} (Cancellation\+Token token)
+\begin{DoxyCompactList}\small\item\em Starts the receiver process with option to pass Cancelation\+Token \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_a_k_m_logic_1_1_receiver_ac6daa4716823eda24a5343e0bad9cb85}{Node\+Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Node Number in Relationship \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_data_received_event_args}{Akm\+Data\+Received\+Event\+Args}} $>$ \mbox{\hyperlink{class_a_k_m_logic_1_1_receiver_a7c8a02fd25776ae99f5ce75271bc2da8}{Data\+Received}}
+\begin{DoxyCompactList}\small\item\em This event will be fired when data received in A\+KM Frame is ready for client \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functionality for receiving A\+KM Frames over network stream and extracts transmitted data 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_receiver_a1edd0bd45f0d108d232259c9854878c6}\label{class_a_k_m_logic_1_1_receiver_a1edd0bd45f0d108d232259c9854878c6}} 
+\index{AKMLogic.Receiver@{AKMLogic.Receiver}!Receiver@{Receiver}}
+\index{Receiver@{Receiver}!AKMLogic.Receiver@{AKMLogic.Receiver}}
+\doxysubsubsection{\texorpdfstring{Receiver()}{Receiver()}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Receiver.\+Receiver (\begin{DoxyParamCaption}\item[{Socket}]{socket,  }\item[{Cancellation\+Token}]{token,  }\item[{I\+Logger}]{logger }\end{DoxyParamCaption})}
+
+
+
+Simplified contructor that uses default I\+Cryptography implementation provided by A\+K\+M\+Crypto class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & Socket from which data is received\\
+\hline
+{\em token} & Token for cancelling operation when client shuts down\\
+\hline
+{\em logger} & I\+Logger implementation\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_receiver_aa7395d36f11a5ab85b5fd9b2d18dd6b4}\label{class_a_k_m_logic_1_1_receiver_aa7395d36f11a5ab85b5fd9b2d18dd6b4}} 
+\index{AKMLogic.Receiver@{AKMLogic.Receiver}!StartReceiving@{StartReceiving}}
+\index{StartReceiving@{StartReceiving}!AKMLogic.Receiver@{AKMLogic.Receiver}}
+\doxysubsubsection{\texorpdfstring{StartReceiving()}{StartReceiving()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Receiver.\+Start\+Receiving (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start new thread responsible for checking network stream for new data and processing it 
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_receiver_a217a0545d484627824f089ce3cd5d304}\label{class_a_k_m_logic_1_1_receiver_a217a0545d484627824f089ce3cd5d304}} 
+\index{AKMLogic.Receiver@{AKMLogic.Receiver}!StartReceiving@{StartReceiving}}
+\index{StartReceiving@{StartReceiving}!AKMLogic.Receiver@{AKMLogic.Receiver}}
+\doxysubsubsection{\texorpdfstring{StartReceiving()}{StartReceiving()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Receiver.\+Start\+Receiving (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{token }\end{DoxyParamCaption})}
+
+
+
+Starts the receiver process with option to pass Cancelation\+Token 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_receiver_ac6daa4716823eda24a5343e0bad9cb85}\label{class_a_k_m_logic_1_1_receiver_ac6daa4716823eda24a5343e0bad9cb85}} 
+\index{AKMLogic.Receiver@{AKMLogic.Receiver}!NodeNumber@{NodeNumber}}
+\index{NodeNumber@{NodeNumber}!AKMLogic.Receiver@{AKMLogic.Receiver}}
+\doxysubsubsection{\texorpdfstring{NodeNumber}{NodeNumber}}
+{\footnotesize\ttfamily int A\+K\+M\+Logic.\+Receiver.\+Node\+Number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Node Number in Relationship 
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_receiver_a7c8a02fd25776ae99f5ce75271bc2da8}\label{class_a_k_m_logic_1_1_receiver_a7c8a02fd25776ae99f5ce75271bc2da8}} 
+\index{AKMLogic.Receiver@{AKMLogic.Receiver}!DataReceived@{DataReceived}}
+\index{DataReceived@{DataReceived}!AKMLogic.Receiver@{AKMLogic.Receiver}}
+\doxysubsubsection{\texorpdfstring{DataReceived}{DataReceived}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_data_received_event_args}{Akm\+Data\+Received\+Event\+Args}}$>$ A\+K\+M\+Logic.\+Receiver.\+Data\+Received}
+
+
+
+This event will be fired when data received in A\+KM Frame is ready for client 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Receiver.\+cs\end{DoxyCompactItemize}

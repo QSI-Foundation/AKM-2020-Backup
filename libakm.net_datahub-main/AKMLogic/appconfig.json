@@ -1,0 +1,42 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AppSettings": {
+    "Version": "One"
+  },
+  "AkmAppConfig": {
+    "SelfAddressValue": 5,
+    "DefaultKeySize": 256,
+    "NumberOfKeys": 4,
+    "FrameSchema": {
+      "RelationshipId_Index": 0,
+      "RelationshipId_Length": 2,
+      "SourceAddress_Index": 2,
+      "SourceAddress_Length": 4,
+      "TargetAddress_Index": 4,
+      "TargetAddress_Length": 2,
+      "AkmEvent_Index": 6,
+      "AkmEvent_Length": 1,
+      "AkmDataStart_Index": 7
+    },
+    "InitialKeys": [
+      {
+        "InitialKey": "6v9y$B&E)H+MbQeThWmZq4t7w!z%C*F-"
+      },
+      {
+        "InitialKey": "z$C&F)H@McQfTjWnZr4u7x!A%D*G-KaN"
+      },
+      {
+        "InitialKey": "6v9y$B&E)H+MbQeMhWmZq4t7w!z%C*Fo"
+      },
+      {
+        "InitialKey": "z$C&F)H@McQfTjWaZr4u7x!A%D*G-Kat"
+      }
+    ]
+  }
+}

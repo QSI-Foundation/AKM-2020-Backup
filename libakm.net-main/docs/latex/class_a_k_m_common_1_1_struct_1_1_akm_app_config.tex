@@ -1,0 +1,143 @@
+\hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config}{}\doxysection{A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config Class Reference}
+\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config}\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+
+
+A\+KM application configuration structure  
+
+
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_acffcf8e1a7e82a478a4e3f30552a868d}{Communication\+Port}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Communication port for service listening \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_ad7317f87b8633f6d6a25d22083dc0f29}{I\+P\+Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em IP address used for server endpoint \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_aef6b3e063b6992c0e00ca67db2c04eac}{Relationship\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Relatinship group identifier \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a7d9689a2277e7daa8ea0434c99d1e032}{Self\+Address\+Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nodes own numeric address value \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_af96588ca0b940ab55e92123fb4230ca6}{Default\+Key\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Default size of cryptographic key length in bytes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_config_frame_schema}{Akm\+Config\+Frame\+Schema}} \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a82c739d023d628463d3e71f6f71dd836}{Frame\+Schema}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A\+KM Frame schema definition \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_a_k_m_common_1_1_struct_1_1_akm_config_params}{Akm\+Config\+Params}} \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_aa7a91120cd1e1ee4074fa70714d85486}{Akm\+Config\+Parameters}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A\+KM specific configuration settings \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_config_key_string}{Akm\+Config\+Key\+String}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a8f30623073bf6fc6a314f87d1fa42a7f}{Initial\+Keys}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional initial cryptographic keys \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_ab1074a4f41cc938bb130eeabd05ff71a}{Nodes\+Addresses}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Array for numeric addresses of all nodes in this Relationship group \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a31faa50abecff3efb29f073f84a9bb10}{P\+DV}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em P\+DV array used in new key generation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A\+KM application configuration structure 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_aa7a91120cd1e1ee4074fa70714d85486}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_aa7a91120cd1e1ee4074fa70714d85486}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!AkmConfigParameters@{AkmConfigParameters}}
+\index{AkmConfigParameters@{AkmConfigParameters}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{AkmConfigParameters}{AkmConfigParameters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_a_k_m_common_1_1_struct_1_1_akm_config_params}{Akm\+Config\+Params}} A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Akm\+Config\+Parameters\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A\+KM specific configuration settings 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_acffcf8e1a7e82a478a4e3f30552a868d}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_acffcf8e1a7e82a478a4e3f30552a868d}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!CommunicationPort@{CommunicationPort}}
+\index{CommunicationPort@{CommunicationPort}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{CommunicationPort}{CommunicationPort}}
+{\footnotesize\ttfamily int A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Communication\+Port\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Communication port for service listening 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_af96588ca0b940ab55e92123fb4230ca6}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_af96588ca0b940ab55e92123fb4230ca6}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!DefaultKeySize@{DefaultKeySize}}
+\index{DefaultKeySize@{DefaultKeySize}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{DefaultKeySize}{DefaultKeySize}}
+{\footnotesize\ttfamily byte A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Default\+Key\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Default size of cryptographic key length in bytes 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a82c739d023d628463d3e71f6f71dd836}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a82c739d023d628463d3e71f6f71dd836}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!FrameSchema@{FrameSchema}}
+\index{FrameSchema@{FrameSchema}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{FrameSchema}{FrameSchema}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_config_frame_schema}{Akm\+Config\+Frame\+Schema}} A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Frame\+Schema\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A\+KM Frame schema definition 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a8f30623073bf6fc6a314f87d1fa42a7f}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a8f30623073bf6fc6a314f87d1fa42a7f}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!InitialKeys@{InitialKeys}}
+\index{InitialKeys@{InitialKeys}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{InitialKeys}{InitialKeys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_k_m_common_1_1_struct_1_1_akm_config_key_string}{Akm\+Config\+Key\+String}} \mbox{[}$\,$\mbox{]} A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Initial\+Keys\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional initial cryptographic keys 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_ad7317f87b8633f6d6a25d22083dc0f29}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_ad7317f87b8633f6d6a25d22083dc0f29}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!IPAddress@{IPAddress}}
+\index{IPAddress@{IPAddress}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{IPAddress}{IPAddress}}
+{\footnotesize\ttfamily string A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+I\+P\+Address\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+IP address used for server endpoint 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_ab1074a4f41cc938bb130eeabd05ff71a}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_ab1074a4f41cc938bb130eeabd05ff71a}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!NodesAddresses@{NodesAddresses}}
+\index{NodesAddresses@{NodesAddresses}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{NodesAddresses}{NodesAddresses}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Nodes\+Addresses\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Array for numeric addresses of all nodes in this Relationship group 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a31faa50abecff3efb29f073f84a9bb10}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a31faa50abecff3efb29f073f84a9bb10}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!PDV@{PDV}}
+\index{PDV@{PDV}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{PDV}{PDV}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+P\+DV\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+P\+DV array used in new key generation 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_aef6b3e063b6992c0e00ca67db2c04eac}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_aef6b3e063b6992c0e00ca67db2c04eac}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!RelationshipId@{RelationshipId}}
+\index{RelationshipId@{RelationshipId}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{RelationshipId}{RelationshipId}}
+{\footnotesize\ttfamily short A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Relationship\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Relatinship group identifier 
+
+\mbox{\Hypertarget{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a7d9689a2277e7daa8ea0434c99d1e032}\label{class_a_k_m_common_1_1_struct_1_1_akm_app_config_a7d9689a2277e7daa8ea0434c99d1e032}} 
+\index{AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}!SelfAddressValue@{SelfAddressValue}}
+\index{SelfAddressValue@{SelfAddressValue}!AKMCommon.Struct.AkmAppConfig@{AKMCommon.Struct.AkmAppConfig}}
+\doxysubsubsection{\texorpdfstring{SelfAddressValue}{SelfAddressValue}}
+{\footnotesize\ttfamily byte A\+K\+M\+Common.\+Struct.\+Akm\+App\+Config.\+Self\+Address\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Nodes own numeric address value 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Common/\+Struct/Akm\+App\+Config.\+cs\end{DoxyCompactItemize}

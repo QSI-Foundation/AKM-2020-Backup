@@ -1,0 +1,125 @@
+\hypertarget{class_a_k_m_logic_1_1_sender}{}\doxysection{A\+K\+M\+Logic.\+Sender Class Reference}
+\label{class_a_k_m_logic_1_1_sender}\index{AKMLogic.Sender@{AKMLogic.Sender}}
+
+
+Provides functionality for sending data on specified network stream using A\+KM Frames  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_sender_ab540db2ca854929d42cfb2bb3143f83f}{Set\+Socket}} (Socket socket)
+\begin{DoxyCompactList}\small\item\em Sets Socket object for network communication \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_sender_abfff3beae12fd620503a0543af742dbd}{Set\+Cryptography}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography}{I\+Cryptography}} cryptography=null)
+\begin{DoxyCompactList}\small\item\em Sets cryptography provider \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_sender_a1240d46b71e04f309779c0c40443a599}{Set\+Logger}} (I\+Logger logger)
+\begin{DoxyCompactList}\small\item\em Sets logger object that will be used \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_sender_ae1fe450da1dd40c6162bde5b37a3190f}{Send\+Data}} (byte\mbox{[}$\,$\mbox{]} data, short target\+Address, \mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}}? forced\+Akm\+Event=null)
+\begin{DoxyCompactList}\small\item\em Starts data transmission process \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_a_k_m_logic_1_1_sender_a8e596c8a9c4ced6b9c7eec84858d1e8a}{Is\+Initialized}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determine if all required components are provided and defined for proper work \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_a_k_m_logic_1_1_sender_a194a59dcbae0635b9c37d3cf36bd61ff}{Is\+Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns value indicating if the sending process is still active \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functionality for sending data on specified network stream using A\+KM Frames 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_sender_ae1fe450da1dd40c6162bde5b37a3190f}\label{class_a_k_m_logic_1_1_sender_ae1fe450da1dd40c6162bde5b37a3190f}} 
+\index{AKMLogic.Sender@{AKMLogic.Sender}!SendData@{SendData}}
+\index{SendData@{SendData}!AKMLogic.Sender@{AKMLogic.Sender}}
+\doxysubsubsection{\texorpdfstring{SendData()}{SendData()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Sender.\+Send\+Data (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data,  }\item[{short}]{target\+Address,  }\item[{\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}}?}]{forced\+Akm\+Event = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Starts data transmission process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Byte array with data that needs to be sent\\
+\hline
+{\em target\+Address} & Target address value\\
+\hline
+{\em forced\+Akm\+Event} & Optional A\+KM Event value that needs to be set on A\+KM Frame\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_sender_abfff3beae12fd620503a0543af742dbd}\label{class_a_k_m_logic_1_1_sender_abfff3beae12fd620503a0543af742dbd}} 
+\index{AKMLogic.Sender@{AKMLogic.Sender}!SetCryptography@{SetCryptography}}
+\index{SetCryptography@{SetCryptography}!AKMLogic.Sender@{AKMLogic.Sender}}
+\doxysubsubsection{\texorpdfstring{SetCryptography()}{SetCryptography()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Sender.\+Set\+Cryptography (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_cryptography}{I\+Cryptography}}}]{cryptography = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Sets cryptography provider 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cryptography} & Object that implements the I\+Cryptography interface\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_sender_a1240d46b71e04f309779c0c40443a599}\label{class_a_k_m_logic_1_1_sender_a1240d46b71e04f309779c0c40443a599}} 
+\index{AKMLogic.Sender@{AKMLogic.Sender}!SetLogger@{SetLogger}}
+\index{SetLogger@{SetLogger}!AKMLogic.Sender@{AKMLogic.Sender}}
+\doxysubsubsection{\texorpdfstring{SetLogger()}{SetLogger()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Sender.\+Set\+Logger (\begin{DoxyParamCaption}\item[{I\+Logger}]{logger }\end{DoxyParamCaption})}
+
+
+
+Sets logger object that will be used 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logger} & Object that implements I\+Logger interface\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_sender_ab540db2ca854929d42cfb2bb3143f83f}\label{class_a_k_m_logic_1_1_sender_ab540db2ca854929d42cfb2bb3143f83f}} 
+\index{AKMLogic.Sender@{AKMLogic.Sender}!SetSocket@{SetSocket}}
+\index{SetSocket@{SetSocket}!AKMLogic.Sender@{AKMLogic.Sender}}
+\doxysubsubsection{\texorpdfstring{SetSocket()}{SetSocket()}}
+{\footnotesize\ttfamily void A\+K\+M\+Logic.\+Sender.\+Set\+Socket (\begin{DoxyParamCaption}\item[{Socket}]{socket }\end{DoxyParamCaption})}
+
+
+
+Sets Socket object for network communication 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_sender_a194a59dcbae0635b9c37d3cf36bd61ff}\label{class_a_k_m_logic_1_1_sender_a194a59dcbae0635b9c37d3cf36bd61ff}} 
+\index{AKMLogic.Sender@{AKMLogic.Sender}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!AKMLogic.Sender@{AKMLogic.Sender}}
+\doxysubsubsection{\texorpdfstring{IsActive}{IsActive}}
+{\footnotesize\ttfamily bool A\+K\+M\+Logic.\+Sender.\+Is\+Active\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns value indicating if the sending process is still active 
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_sender_a8e596c8a9c4ced6b9c7eec84858d1e8a}\label{class_a_k_m_logic_1_1_sender_a8e596c8a9c4ced6b9c7eec84858d1e8a}} 
+\index{AKMLogic.Sender@{AKMLogic.Sender}!IsInitialized@{IsInitialized}}
+\index{IsInitialized@{IsInitialized}!AKMLogic.Sender@{AKMLogic.Sender}}
+\doxysubsubsection{\texorpdfstring{IsInitialized}{IsInitialized}}
+{\footnotesize\ttfamily bool A\+K\+M\+Logic.\+Sender.\+Is\+Initialized\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Determine if all required components are provided and defined for proper work 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Sender.\+cs\end{DoxyCompactItemize}

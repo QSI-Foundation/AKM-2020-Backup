@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AKMInterface</name>
+    </assembly>
+    <members>
+        <member name="M:AKMInterface.ICLibCalls.AKMInit(AKMCommon.Struct.AkmProcessCtx@,AKMCommon.Struct.AkmConfiguration@)">
+            <summary>
+            Intializes AKM state machine based on provided parameters
+            </summary>
+            <param name="ctx"></param>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

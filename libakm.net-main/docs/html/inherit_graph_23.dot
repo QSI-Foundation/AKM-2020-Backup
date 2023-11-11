@@ -1,0 +1,20 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node23 [label="AKMInterface.ICryptography",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_a_k_m_interface_1_1_i_cryptography.html",tooltip=" "];
+  Node23 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="AKMLogic.AkmCrypto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_k_m_logic_1_1_akm_crypto.html",tooltip="Default cryptographic service provider for encryption, decryption and hash value checks"];
+  Node23 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="AKMLogic.AkmDummyCrypto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_k_m_logic_1_1_akm_dummy_crypto.html",tooltip=" "];
+  Node15 [label="IDisposable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="AKMInterface.IRelationship",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_a_k_m_interface_1_1_i_relationship.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="AKMLogic.AkmRelationship",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_k_m_logic_1_1_akm_relationship.html",tooltip=" "];
+  Node15 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="mlibakm.Relationship",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmlibakm_1_1_relationship.html",tooltip=" "];
+}

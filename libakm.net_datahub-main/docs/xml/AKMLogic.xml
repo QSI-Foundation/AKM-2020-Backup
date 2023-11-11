@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AKMLogic</name>
+    </assembly>
+    <members>
+        <member name="T:AKMLogic.AkmCLibCall">
+            <summary>
+            Empty class used as a default implementation of C library calls interface
+            </summary>
+        </member>
+        <member name="T:AKMLogic.AkmCrypto">
+            <summary>
+            Default cryptographic service provider for encryption, decryption and hash value checks
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmCrypto.KeySize">
+            <inheritDoc/>
+        </member>
+        <member name="P:AKMLogic.AkmCrypto.BlockSize">
+            <inheritDoc/>
+        </member>
+        <member name="P:AKMLogic.AkmCrypto.HashLength">
+            <inheritDoc/>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.#ctor(System.Int32)">
+            <summary>
+            Constructor allowing custom keysize value
+            </summary>
+            <param name="keySize">encryption key length in bits</param>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor allowing for custom key and block size
+            </summary>
+            <param name="keySize">encryption key length in bits</param>
+            <param name="blockSize">encryption block size in bits</param>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.Encrypt(System.Byte[],System.Byte[])">
+            <inheritDoc/>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.Decrypt(System.Byte[],System.Byte[])">
+            <inheritDoc/>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.CalculateHash(System.Byte[])">
+            <inheritDoc/>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.Dispose(System.Boolean)">
+            <inheritDoc/>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmCrypto.Dispose">
+            <inheritDoc/>
+        </member>
+        <member name="T:AKMLogic.AkmDecryptedFrame">
+            <summary>
+            Default IDecryptedFrame implementation
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmDecryptedFrame.RelationshipId">
+            <inheritdoc/>
+        </member>
+        <member name="P:AKMLogic.AkmDecryptedFrame.FrameEvent">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.#ctor(AKMInterface.ICryptography,Microsoft.Extensions.Logging.ILogger,System.Int16)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.Encrypt(AKMInterface.IKey)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetFrameEvent(AKMCommon.Enum.AkmEvent)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetContent(System.Byte[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetData(System.Byte[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetSourceAddress(System.Int16)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetSourceAddress(System.Byte[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetTargetAddress(System.Int16)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetTargetAddress(System.Byte[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetSourceAddressAsByteArray">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetTargetAddressAsByteArray">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetFrameBytes">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetFrameBytesForEncryption">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetContentBytes">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetSourceAddressAsShort">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetTargetAddressAsShort">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.SetContentHash">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetContentHashAsString">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.GetContentHashAsByteArray">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmDecryptedFrame.CheckHash">
+            <summary>
+            Checks if hash stored in AKM frame is valid
+            </summary>
+            <returns>true if stored and calculated hash values are the same, false if there is a difference</returns>
+        </member>
+        <member name="T:AKMLogic.AkmEncryptedFrame">
+            <summary>
+            Default AKM Endcrypted frame implementation
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmEncryptedFrame.RelationshipId">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmEncryptedFrame.#ctor(AKMInterface.ICryptography,Microsoft.Extensions.Logging.ILogger,System.Int16)">
+            <summary>
+            Constructor accepting ICryptography implementation, ILogger implementation and relationship Id value
+            </summary>
+            <param name="cryptographyProvider">Object implementing ICryptography interface</param>
+            <param name="logger">Object implementing ILogger interface</param>
+            <param name="relationshipId">Relationship Id numeric value</param>
+        </member>
+        <member name="M:AKMLogic.AkmEncryptedFrame.#ctor(AKMInterface.ICryptography,Microsoft.Extensions.Logging.ILogger,System.Byte[],System.Int16)">
+            <summary>
+            Constructor 
+            </summary>
+            <param name="cryptographyProvider">Object implementing ICryptography interface</param>
+            <param name="logger">Object implementing ILogger interface</param>
+            <param name="encryptedData">byte array holding encrypted part of AKM frame</param>
+            <param name="relationshipId">Relationship Id numeric value</param>
+        </member>
+        <member name="M:AKMLogic.AkmEncryptedFrame.GetEncryptedData">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmEncryptedFrame.GetTransmissionData">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmEncryptedFrame.Decrypt(AKMInterface.IKey)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmEncryptedFrame.SetEncryptedData(System.Byte[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmEncryptedFrame.SetFrameHeader">
+            <inheritdoc/>
+        </member>
+        <member name="T:AKMLogic.AkmKey">
+            <summary>
+            Default IKey implementation
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmKey.#ctor(System.Int32)">
+            <summary>
+            Contructor allowing for custom key length
+            </summary>
+            <param name="keyLength">Encryption Key Length in bytes (not bits!)</param>
+        </member>
+        <member name="M:AKMLogic.AkmKey.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmKey.KeyLength">
+            <summary>
+            Gets or sets key length value
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmKey.KeyAsString">
+            <summary>
+            Current key as UTF8 encoded string
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmKey.KeyAsBase64String">
+            <summary>
+            Current key as Base64 string
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmKey.KeyAsBytes">
+            <summary>
+            Current key as byte array
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmKey.SetKey(System.Byte[])">
+            <summary>
+            Update current key value from byte array
+            </summary>
+            <param name="keyBytes">byte array with new key value</param>
+        </member>
+        <member name="M:AKMLogic.AkmKey.SetKeyFromString(System.String)">
+            <summary>
+            Update current key value from a string
+            </summary>
+            <param name="keyString">string with new key value</param>
+        </member>
+        <member name="M:AKMLogic.AkmKey.SetKeyFromBase64String(System.String)">
+            <summary>
+            Update current key value from a Base64 encoded string
+            </summary>
+            <param name="keyString">Base64 encoded string with new key value</param>
+        </member>
+        <member name="T:AKMLogic.AkmKeyFactory">
+            <summary>
+            Default implementation of IKeyFactory
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmKeyFactory.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmKeyFactory.#ctor(System.Int32)">
+            <summary>
+            Constructor allowing setting custom key length 
+            </summary>
+            <param name="keyLength">Key length in bytes</param>
+        </member>
+        <member name="M:AKMLogic.AkmKeyFactory.Create(System.IntPtr,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmKeyFactory.Create(System.Byte[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmKeyFactory.Create(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:AKMLogic.AkmRelationship">
+            <summary>
+            Main processing class
+            </summary>
+        </member>
+        <member name="F:AKMLogic.AkmRelationship.KEY_COUNT">
+            <summary>
+            Assumed key count
+            </summary>
+        </member>
+        <member name="F:AKMLogic.AkmRelationship.PDV_Size">
+            <summary>
+            PDV structure length
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmRelationship.IsActive">
+            <summary>
+            Flag indicating if every node in this Relationship is active
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.GetKeys">
+            <summary>
+            Returns collection of currently used encryption keys
+            </summary>
+            <returns>IKey array with currently active keys</returns>
+        </member>
+        <member name="P:AKMLogic.AkmRelationship.CurrentAkmEvent">
+            <summary>
+            Gets current active AKM Event
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmRelationship.IsConfigurationUpdated">
+            <summary>
+            Flag set when processing AKM frame results in changing current AKM configuratin
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.#ctor(Microsoft.Extensions.Logging.ILogger,AKMInterface.ICLibCalls,AKMInterface.IKeyFactory,AKMInterface.IKey[],AKMCommon.Struct.AkmConfiguration@)">
+            <summary>
+            AkmRelationship constructor
+            </summary>
+            <param name="logger">IClibCalls interface implementation</param>
+            <param name="cLibCaller">IClibCalls interface implementation</param>
+            <param name="keyFactory">IKEyFactory implementation</param>
+            <param name="initialKeys">Array of initial keys</param>
+            <param name="config">reference to AkmConfiguration structure</param>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.ProcessFrame(AKMInterface.IEncryptedFrame,AKMInterface.IDecryptedFrame@)">
+            <summary>
+            Processes IEncryptedFrame object to create IDecryptedFrame instance
+            </summary>
+            <param name="encFrame"></param>
+            <param name="decFrame"></param>
+            <returns>AKM status as frame processing result</returns>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.PrepareFrame(AKMInterface.IDecryptedFrame,System.Nullable{AKMCommon.Enum.AkmEvent})">
+            <summary>
+            Creates IEncryptedFrame from IDecryptedFrame object allowing for forced AKM event
+            </summary>
+            <param name="decFrame">IDecryptedFrame object</param>
+            <param name="forcedAkmEvent">Optional value for forcing AKM event</param>
+            <returns>IEncryptedFrame object</returns>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.PrepareFrame(AKMInterface.IDecryptedFrame,AKMInterface.IEncryptedFrame@)">
+            <summary>
+            Prepares IEncrypted frame object based on provided IDecrypted frame
+            </summary>
+            <param name="decFrame">IDecrypted frame instance</param>
+            <param name="encFrame">output with creaetd IEncryptedFrame</param>
+            <returns>AKM status</returns>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.PrepareFrame(AKMInterface.IDecryptedFrame,AKMInterface.IEncryptedFrame@,System.Nullable{AKMCommon.Enum.AkmEvent})">
+            <summary>
+            Prepares IEncrypted frame object based on provided IDecrypted frame with option to enforce AKM Event
+            </summary>
+            <param name="decFrame">IDecrypted frame instance</param>
+            <param name="encFrame">output with creaetd IEncryptedFrame</param>
+            <param name="forcedAkmEvent">forced AkmEvent value</param>
+            <returns>AKM status</returns>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.Dispose(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:AKMLogic.AkmRelationship.GetCurrentAKMConfig(System.Byte[]@,System.Byte[]@,System.Byte[]@)">
+            <summary>
+            Returns currenlty used AKM config for this Relationship
+            </summary>
+            <param name="pdv">byte array with PDV</param>
+            <param name="nodeAddresses">byte array with Relationship nodes</param>
+            <param name="selfNodeAddr">byte array with own node address</param>
+        </member>
+        <member name="T:AKMLogic.AkmSenderManager">
+            <summary>
+            Provides client with Sender objects based on provided RelationshipID value
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmSenderManager.SetDefaultCryptography(AKMInterface.ICryptography)">
+            <summary>
+            Sets default cryptography provider based on given ICryptography implementation. Uses default AkmCrypto class for null parameter
+            </summary>
+            <param name="crypto">ICryptography implementation</param>
+        </member>
+        <member name="M:AKMLogic.AkmSenderManager.GetDefaultSender(System.Threading.CancellationToken)">
+            <summary>
+            Returns Sender object with configuration based on first entry in configuration file
+            </summary>
+            <returns>Sender object</returns>
+        </member>
+        <member name="M:AKMLogic.AkmSenderManager.GetSender(System.Int16,System.Int16)">
+            <summary>
+            Returns Sender object with configuration created based on RelationshipId value
+            </summary>
+            <param name="relatioshipId">Identifies AKM Relationship</param>
+            <param name="targetAddress">Identifies target to select proper sender for this AKM relationship </param>
+            <returns>Sender object</returns>
+        </member>
+        <member name="M:AKMLogic.AkmSenderManager.GetRelationshipSenders(System.Int16)">
+            <summary>
+            Returns a Sender object collection for given Relationship
+            </summary>
+            <param name="relationshipId">Relationship Identifier</param>
+            <returns>IDictionary collection or null if given Relationship Id is not registered</returns>
+        </member>
+        <member name="M:AKMLogic.AkmSenderManager.AddSender(System.Int16,System.Int16,System.Net.Sockets.Socket,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Add new sender object to specific Relationship 
+            </summary>
+            <param name="relatioshipId">Relationship identifier</param>
+            <param name="senderAddress">Numeric value for target node</param>
+            <param name="socket">Socket object for connected node</param>
+            <param name="logger">ILogger implementation</param>
+        </member>
+        <member name="T:AKMLogic.AkmSetup">
+            <summary>
+            Provides information about defined AKM configuration 
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmSetup.ForceFileConfig">
+            <summary>
+            Determines if configuration values should be taken only from config file
+            </summary>
+        </member>
+        <member name="M:AKMLogic.AkmSetup.EnvVariableName(System.Int16,System.Int16)">
+            <summary>
+            Returns environment variable name for storing current configuration based on relationshipId and self address value
+            </summary>
+            <param name="relationshipId">RelationshipId value</param>
+            <param name="selfAddress">Self Node Address value</param>
+            <returns></returns>
+        </member>
+        <member name="P:AKMLogic.AkmSetup.Logger">
+            <summary>
+            ILogger implementation
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmSetup.AkmAppCfg">
+            <summary>
+            Collection of AKM application config structures selected by RelationshipId value
+            </summary>
+        </member>
+        <member name="P:AKMLogic.AkmSetup.AkmRelationships">
+            <summary>
+            Collection of AKM Relationship objects responsible for processing AKM Frames
+            </summary>
+        </member>
+        <member name="T:AKMLogic.Receiver">
+            <summary>
+            Provides functionality for receiving AKM Frames over network stream and extracts transmitted data 
+            </summary>
+        </member>
+        <member name="P:AKMLogic.Receiver.NodeNumber">
+            <summary>
+            Node Number in Relationship
+            </summary>
+        </member>
+        <member name="E:AKMLogic.Receiver.DataReceived">
+            <summary>
+            This event will be fired when data received in AKM Frame is ready for client
+            </summary>
+        </member>
+        <member name="E:AKMLogic.Receiver.RawDataReceived">
+            <summary>
+            This event will be fired when data received from Relationship Node is ready to be passed to other nodes
+            </summary>
+        </member>
+        <member name="M:AKMLogic.Receiver.#ctor(System.Net.Sockets.Socket,System.Threading.CancellationToken,Microsoft.Extensions.Logging.ILogger,AKMInterface.ICryptography)">
+            <summary>
+            Simplified contructor that uses default ICryptography implementation provided by AKMCrypto class.
+            </summary>
+            <param name="socket">Socket from which data is received</param>
+            <param name="token">Token for cancelling operation when client shuts down</param>
+            <param name="logger">ILogger implementation</param>
+            <param name="cryptography">cryptography implementation</param>
+        </member>
+        <member name="M:AKMLogic.Receiver.#ctor(System.Net.Sockets.Socket,System.Threading.CancellationToken,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Simplified contructor that uses default ICryptography implementation provided by AKMCrypto class.
+            </summary>
+            <param name="socket">Socket from which data is received</param>
+            <param name="token">Token for cancelling operation when client shuts down</param>
+            <param name="logger">ILogger implementation</param>
+        </member>
+        <member name="M:AKMLogic.Receiver.StartReceiving">
+            <summary>
+            Start new thread responsible for checking network stream for new data and processing it
+            </summary>
+        </member>
+        <member name="M:AKMLogic.Receiver.StartReceiving(System.Threading.CancellationToken)">
+            <summary>
+            Starts the receiver process with option to pass CancelationToken
+            </summary>
+            <param name="token"></param>
+        </member>
+        <member name="T:AKMLogic.Sender">
+            <summary>
+            Provides functionality for sending data on specified network stream using AKM Frames
+            </summary>
+        </member>
+        <member name="P:AKMLogic.Sender.IsInitialized">
+            <summary>
+            Determine if all required components are provided and defined for proper work
+            </summary>
+        </member>
+        <member name="P:AKMLogic.Sender.IsActive">
+            <summary>
+            Returns value indicating if the sending process is still active
+            </summary>
+        </member>
+        <member name="P:AKMLogic.Sender.IsRelationshipActive">
+            <summary>
+            Returns valie indicating if the Relationship group is complete and active
+            </summary>
+        </member>
+        <member name="M:AKMLogic.Sender.SetSocket(System.Net.Sockets.Socket)">
+            <summary>
+            Sets Socket object for network communication
+            </summary>
+            <param name="socket"></param>
+        </member>
+        <member name="M:AKMLogic.Sender.SetCryptography(AKMInterface.ICryptography)">
+            <summary>
+            Sets cryptography provider
+            </summary>
+            <param name="cryptography">Object that implements the ICryptography interface</param>
+        </member>
+        <member name="M:AKMLogic.Sender.SetLogger(Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Sets logger object that will be used
+            </summary>
+            <param name="logger">Object that implements ILogger interface</param>
+        </member>
+        <member name="M:AKMLogic.Sender.SendRawData(System.Byte[])">
+            <summary>
+            Used for sending raw data package, no AKM processing
+            </summary>
+            <param name="rawData"></param>
+        </member>
+        <member name="M:AKMLogic.Sender.Run">
+            <summary>
+            Starts sedner thread
+            </summary>
+        </member>
+        <member name="M:AKMLogic.Sender.PrepareFrame(System.Byte[],System.Byte[])">
+            <summary>
+            Prepares a decrypted AKM frame based on provided content and target address
+            </summary>
+            <param name="content">Byte array with data that needs to be sent</param>
+            <param name="targetAddress">byte array with destination address value</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

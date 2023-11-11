@@ -1,0 +1,146 @@
+\hypertarget{interface_a_k_m_interface_1_1_i_encrypted_frame}{}\doxysection{A\+K\+M\+Interface.\+I\+Encrypted\+Frame Interface Reference}
+\label{interface_a_k_m_interface_1_1_i_encrypted_frame}\index{AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}}
+
+
+A\+KM encrypted frame interface  
+
+
+Inheritance diagram for A\+K\+M\+Interface.\+I\+Encrypted\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_a_k_m_interface_1_1_i_encrypted_frame}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame_a46b457a183cb76bc13576ef7a83cb1f3}{Get\+Encrypted\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Returns byte array storing encrypted part of A\+KM frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame_a6d66143484199c2fb916158025e132d1}{Set\+Encrypted\+Data}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Sets encrypted part of A\+KM frame \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame_a48c8b2c12138a0d5f6d8ff233eed1006}{Decrypt}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} key)
+\begin{DoxyCompactList}\small\item\em Method responsible for decrypting A\+KM frame content based on provided key \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame_a23d548e1138783758a365fb89092e87a}{Get\+Transmission\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Decrypts A\+KM frame and reutns full \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame_aef125abf25e825753e281618a5a95bce}{Set\+Frame\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Sets A\+KM Frame length in header \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame_aa815ba443826fffdc70a131bf7a3ec87}{Relationship\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Relationship identifier \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A\+KM encrypted frame interface 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_encrypted_frame_a48c8b2c12138a0d5f6d8ff233eed1006}\label{interface_a_k_m_interface_1_1_i_encrypted_frame_a48c8b2c12138a0d5f6d8ff233eed1006}} 
+\index{AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}!Decrypt@{Decrypt}}
+\index{Decrypt@{Decrypt}!AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{Decrypt()}{Decrypt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} A\+K\+M\+Interface.\+I\+Encrypted\+Frame.\+Decrypt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Method responsible for decrypting A\+KM frame content based on provided key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & decryption key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+Decrypted frame object
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a2e6aed21ee78f4b73bc31e6cea653551}{A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_encrypted_frame_a46b457a183cb76bc13576ef7a83cb1f3}\label{interface_a_k_m_interface_1_1_i_encrypted_frame_a46b457a183cb76bc13576ef7a83cb1f3}} 
+\index{AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}!GetEncryptedData@{GetEncryptedData}}
+\index{GetEncryptedData@{GetEncryptedData}!AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetEncryptedData()}{GetEncryptedData()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Interface.\+I\+Encrypted\+Frame.\+Get\+Encrypted\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns byte array storing encrypted part of A\+KM frame 
+
+\begin{DoxyReturn}{Returns}
+byte aray with encrypted content
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_aaeb0343830d9338ba3c47aa42d664c94}{A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_encrypted_frame_a23d548e1138783758a365fb89092e87a}\label{interface_a_k_m_interface_1_1_i_encrypted_frame_a23d548e1138783758a365fb89092e87a}} 
+\index{AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}!GetTransmissionData@{GetTransmissionData}}
+\index{GetTransmissionData@{GetTransmissionData}!AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{GetTransmissionData()}{GetTransmissionData()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} A\+K\+M\+Interface.\+I\+Encrypted\+Frame.\+Get\+Transmission\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decrypts A\+KM frame and reutns full \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} object 
+
+\begin{DoxyReturn}{Returns}
+I\+Decrypted frame implementation
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_aed4fdba8f5ea437d35cb8ea73fdc73fe}{A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_encrypted_frame_a6d66143484199c2fb916158025e132d1}\label{interface_a_k_m_interface_1_1_i_encrypted_frame_a6d66143484199c2fb916158025e132d1}} 
+\index{AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}!SetEncryptedData@{SetEncryptedData}}
+\index{SetEncryptedData@{SetEncryptedData}!AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetEncryptedData()}{SetEncryptedData()}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Encrypted\+Frame.\+Set\+Encrypted\+Data (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})}
+
+
+
+Sets encrypted part of A\+KM frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & byte array with encrypted A\+KM frame part\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a7a59bc1f8fb989c72f2cedb860654feb}{A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame}}.
+
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_encrypted_frame_aef125abf25e825753e281618a5a95bce}\label{interface_a_k_m_interface_1_1_i_encrypted_frame_aef125abf25e825753e281618a5a95bce}} 
+\index{AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}!SetFrameLength@{SetFrameLength}}
+\index{SetFrameLength@{SetFrameLength}!AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{SetFrameLength()}{SetFrameLength()}}
+{\footnotesize\ttfamily void A\+K\+M\+Interface.\+I\+Encrypted\+Frame.\+Set\+Frame\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets A\+KM Frame length in header 
+
+
+
+Implemented in \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_encrypted_frame_a7054b87980d586cbc154683d4e6bbf99}{A\+K\+M\+Logic.\+Akm\+Encrypted\+Frame}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_a_k_m_interface_1_1_i_encrypted_frame_aa815ba443826fffdc70a131bf7a3ec87}\label{interface_a_k_m_interface_1_1_i_encrypted_frame_aa815ba443826fffdc70a131bf7a3ec87}} 
+\index{AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}!RelationshipId@{RelationshipId}}
+\index{RelationshipId@{RelationshipId}!AKMInterface.IEncryptedFrame@{AKMInterface.IEncryptedFrame}}
+\doxysubsubsection{\texorpdfstring{RelationshipId}{RelationshipId}}
+{\footnotesize\ttfamily short A\+K\+M\+Interface.\+I\+Encrypted\+Frame.\+Relationship\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Relationship identifier 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Interface/I\+Encrypted\+Frame.\+cs\end{DoxyCompactItemize}

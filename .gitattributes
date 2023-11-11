@@ -1,0 +1,7 @@
+*  text eol=lf
+
+*.dll   -text binary
+*.docx  -text binary
+*.exe   -text binary
+*.png   -text binary
+*.rtf   -text binary

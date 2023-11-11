@@ -1,0 +1,199 @@
+\hypertarget{class_a_k_m_logic_1_1_akm_relationship}{}\doxysection{A\+K\+M\+Logic.\+Akm\+Relationship Class Reference}
+\label{class_a_k_m_logic_1_1_akm_relationship}\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+
+
+Main processing class  
+
+
+Inheritance diagram for A\+K\+M\+Logic.\+Akm\+Relationship\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_k_m_logic_1_1_akm_relationship}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_ae23447d3c639c88bec6c33e5c13f5506}{Get\+Keys}} ()
+\begin{DoxyCompactList}\small\item\em Returns collection of currently used encryption keys \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_a7a5d3f11c41a112670d8ee5212a7db5e}{Akm\+Relationship}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_c_lib_calls}{I\+C\+Lib\+Calls}} c\+Lib\+Caller, \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key_factory}{I\+Key\+Factory}} key\+Factory, \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}}\mbox{[}$\,$\mbox{]} initial\+Keys, ref \mbox{\hyperlink{struct_a_k_m_common_1_1_struct_1_1_akm_configuration}{Akm\+Configuration}} config)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship}{Akm\+Relationship}} constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a2b9302246ac241f7ec4666cfd0999d87}{Akm\+Status}} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_a9f5449af4a70cd1431c351e979de17ac}{Process\+Frame}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}} enc\+Frame, out \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} dec\+Frame)
+\begin{DoxyCompactList}\small\item\em Processes I\+Encrypted\+Frame object to create I\+Decrypted\+Frame instance \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_adf4c98bc8a9d5533165543f1b1bb9651}{Prepare\+Frame}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} dec\+Frame, \mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}}? forced\+Akm\+Event=null)
+\begin{DoxyCompactList}\small\item\em Creates I\+Encrypted\+Frame from I\+Decrypted\+Frame object allowing for forced A\+KM event \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a2b9302246ac241f7ec4666cfd0999d87}{Akm\+Status}} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_a2091cb071865d04b988e45bd2acfe1ee}{Prepare\+Frame}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} dec\+Frame, out \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}} enc\+Frame)
+\begin{DoxyCompactList}\small\item\em Prepares I\+Encrypted frame object based on provided I\+Decrypted frame \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a2b9302246ac241f7ec4666cfd0999d87}{Akm\+Status}} \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_af7a798e1999c29cd147a7bb8ff12d751}{Prepare\+Frame}} (\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}} dec\+Frame, out \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}} enc\+Frame, \mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}}? forced\+Akm\+Event)
+\begin{DoxyCompactList}\small\item\em Prepares I\+Encrypted frame object based on provided I\+Decrypted frame with option to enforce A\+KM Event \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_afb6fd8b4c5bd017dd2a0b69f769a9e72}\label{class_a_k_m_logic_1_1_akm_relationship_afb6fd8b4c5bd017dd2a0b69f769a9e72}} 
+void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_afb6fd8b4c5bd017dd2a0b69f769a9e72}{Dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_a0933d917aec260500ee60cb6ec29dcdf}{K\+E\+Y\+\_\+\+C\+O\+U\+NT}} = 4
+\begin{DoxyCompactList}\small\item\em Assumed key count \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_a6ac8419c502892cefc069e33ea38798d}{P\+D\+V\+\_\+\+Size}} = 128
+\begin{DoxyCompactList}\small\item\em P\+DV structure length \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_a518e7398ee918eaa37c0e8d967883cac}\label{class_a_k_m_logic_1_1_akm_relationship_a518e7398ee918eaa37c0e8d967883cac}} 
+virtual void \mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship_a518e7398ee918eaa37c0e8d967883cac}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main processing class 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_a7a5d3f11c41a112670d8ee5212a7db5e}\label{class_a_k_m_logic_1_1_akm_relationship_a7a5d3f11c41a112670d8ee5212a7db5e}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!AkmRelationship@{AkmRelationship}}
+\index{AkmRelationship@{AkmRelationship}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{AkmRelationship()}{AkmRelationship()}}
+{\footnotesize\ttfamily A\+K\+M\+Logic.\+Akm\+Relationship.\+Akm\+Relationship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_c_lib_calls}{I\+C\+Lib\+Calls}}}]{c\+Lib\+Caller,  }\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key_factory}{I\+Key\+Factory}}}]{key\+Factory,  }\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}}\mbox{[}$\,$\mbox{]}}]{initial\+Keys,  }\item[{ref \mbox{\hyperlink{struct_a_k_m_common_1_1_struct_1_1_akm_configuration}{Akm\+Configuration}}}]{config }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_a_k_m_logic_1_1_akm_relationship}{Akm\+Relationship}} constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\+Lib\+Caller} & I\+Clib\+Calls interface implementation\\
+\hline
+{\em key\+Factory} & I\+K\+Ey\+Factory implementation\\
+\hline
+{\em initial\+Keys} & Array of initial keys\\
+\hline
+{\em config} & reference to Akm\+Configuration structure\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_ae23447d3c639c88bec6c33e5c13f5506}\label{class_a_k_m_logic_1_1_akm_relationship_ae23447d3c639c88bec6c33e5c13f5506}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!GetKeys@{GetKeys}}
+\index{GetKeys@{GetKeys}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{GetKeys()}{GetKeys()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_key}{I\+Key}} \mbox{[}$\,$\mbox{]} A\+K\+M\+Logic.\+Akm\+Relationship.\+Get\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns collection of currently used encryption keys 
+
+\begin{DoxyReturn}{Returns}
+I\+Key array with currently active keys
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_adf4c98bc8a9d5533165543f1b1bb9651}\label{class_a_k_m_logic_1_1_akm_relationship_adf4c98bc8a9d5533165543f1b1bb9651}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!PrepareFrame@{PrepareFrame}}
+\index{PrepareFrame@{PrepareFrame}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{PrepareFrame()}{PrepareFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}} A\+K\+M\+Logic.\+Akm\+Relationship.\+Prepare\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}}}]{dec\+Frame,  }\item[{\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}}?}]{forced\+Akm\+Event = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Creates I\+Encrypted\+Frame from I\+Decrypted\+Frame object allowing for forced A\+KM event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dec\+Frame} & I\+Decrypted\+Frame object\\
+\hline
+{\em forced\+Akm\+Event} & Optional value for forcing A\+KM event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+I\+Encrypted\+Frame object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_a2091cb071865d04b988e45bd2acfe1ee}\label{class_a_k_m_logic_1_1_akm_relationship_a2091cb071865d04b988e45bd2acfe1ee}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!PrepareFrame@{PrepareFrame}}
+\index{PrepareFrame@{PrepareFrame}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{PrepareFrame()}{PrepareFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a2b9302246ac241f7ec4666cfd0999d87}{Akm\+Status}} A\+K\+M\+Logic.\+Akm\+Relationship.\+Prepare\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}}}]{dec\+Frame,  }\item[{out \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}}}]{enc\+Frame }\end{DoxyParamCaption})}
+
+
+
+Prepares I\+Encrypted frame object based on provided I\+Decrypted frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dec\+Frame} & I\+Decrypted frame instance\\
+\hline
+{\em enc\+Frame} & output with creaetd I\+Encrypted\+Frame\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+KM status
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_af7a798e1999c29cd147a7bb8ff12d751}\label{class_a_k_m_logic_1_1_akm_relationship_af7a798e1999c29cd147a7bb8ff12d751}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!PrepareFrame@{PrepareFrame}}
+\index{PrepareFrame@{PrepareFrame}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{PrepareFrame()}{PrepareFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a2b9302246ac241f7ec4666cfd0999d87}{Akm\+Status}} A\+K\+M\+Logic.\+Akm\+Relationship.\+Prepare\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}}}]{dec\+Frame,  }\item[{out \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}}}]{enc\+Frame,  }\item[{\mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a490b63793ae2fbe270eb189533bf5172}{Akm\+Event}}?}]{forced\+Akm\+Event }\end{DoxyParamCaption})}
+
+
+
+Prepares I\+Encrypted frame object based on provided I\+Decrypted frame with option to enforce A\+KM Event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dec\+Frame} & I\+Decrypted frame instance\\
+\hline
+{\em enc\+Frame} & output with creaetd I\+Encrypted\+Frame\\
+\hline
+{\em forced\+Akm\+Event} & forced Akm\+Event value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+KM status
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_a9f5449af4a70cd1431c351e979de17ac}\label{class_a_k_m_logic_1_1_akm_relationship_a9f5449af4a70cd1431c351e979de17ac}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!ProcessFrame@{ProcessFrame}}
+\index{ProcessFrame@{ProcessFrame}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{ProcessFrame()}{ProcessFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_a_k_m_common_1_1_enum_a2b9302246ac241f7ec4666cfd0999d87}{Akm\+Status}} A\+K\+M\+Logic.\+Akm\+Relationship.\+Process\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_a_k_m_interface_1_1_i_encrypted_frame}{I\+Encrypted\+Frame}}}]{enc\+Frame,  }\item[{out \mbox{\hyperlink{interface_a_k_m_interface_1_1_i_decrypted_frame}{I\+Decrypted\+Frame}}}]{dec\+Frame }\end{DoxyParamCaption})}
+
+
+
+Processes I\+Encrypted\+Frame object to create I\+Decrypted\+Frame instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enc\+Frame} & \\
+\hline
+{\em dec\+Frame} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+KM status as frame processing result
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_a0933d917aec260500ee60cb6ec29dcdf}\label{class_a_k_m_logic_1_1_akm_relationship_a0933d917aec260500ee60cb6ec29dcdf}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!KEY\_COUNT@{KEY\_COUNT}}
+\index{KEY\_COUNT@{KEY\_COUNT}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{KEY\_COUNT}{KEY\_COUNT}}
+{\footnotesize\ttfamily const int A\+K\+M\+Logic.\+Akm\+Relationship.\+K\+E\+Y\+\_\+\+C\+O\+U\+NT = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Assumed key count 
+
+\mbox{\Hypertarget{class_a_k_m_logic_1_1_akm_relationship_a6ac8419c502892cefc069e33ea38798d}\label{class_a_k_m_logic_1_1_akm_relationship_a6ac8419c502892cefc069e33ea38798d}} 
+\index{AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}!PDV\_Size@{PDV\_Size}}
+\index{PDV\_Size@{PDV\_Size}!AKMLogic.AkmRelationship@{AKMLogic.AkmRelationship}}
+\doxysubsubsection{\texorpdfstring{PDV\_Size}{PDV\_Size}}
+{\footnotesize\ttfamily const int A\+K\+M\+Logic.\+Akm\+Relationship.\+P\+D\+V\+\_\+\+Size = 128\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+P\+DV structure length 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Olympus\+Sky/\+Code/libakmnet\+\_\+clean/libakm.\+net/\+A\+K\+M\+Logic/Akm\+Relationship.\+cs\end{DoxyCompactItemize}
